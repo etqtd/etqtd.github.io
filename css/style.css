@@ -1,3 +1,69 @@
-body{
-    background-color: brown;
+*,*::after,*::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
+
+header{
+    padding: 30px 0 30px 0;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav a{
+    text-decoration: none;
+    font-size: 1vw;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: color 0.5s;
+}
+
+nav a:hover{
+    color: rgb(130, 130, 130);
+    
+  
+}
+
+nav li{
+    list-style-type: none;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+}
+
+
+main{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: blue;
+}
+
+.flex-info-item{
+    width: 10%;
+}
+
+.flex-info2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: rgb(102, 102, 224);
+}
+
+.flex-info-item2{
+    width: 10%;
+}
+
