@@ -5,6 +5,8 @@
 }
 
 header{
+    display: flex;
+    flex-direction: column;
     background-color: rgb(54, 138, 212);
     padding: 30px 0 30px 0;
 }
@@ -39,18 +41,6 @@ nav li:hover{
 
 /***FIN DE ESTILO DEL HEADER****/
 
-.flex-info-item{
-    transition: all 0.5s;
-}
-
-.flex-info-item:hover{
-    transform: scale(1.5);
-}
-
-nav li{
-    list-style-type: none;
-}
-
 body{
     display: flex;
     flex-direction: column;
@@ -64,25 +54,6 @@ main{
     flex-direction: column;
 }
 
-.flex-info{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    background-color: blue;
+.nav-carpinteria{
+    background-color: blueviolet;
 }
-
-.flex-info-item{
-    width: 10%;
-}
-
-.flex-info2{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    background-color: rgb(102, 102, 224);
-}
-
-.flex-info-item2{
-    width: 10%;
-}
-
