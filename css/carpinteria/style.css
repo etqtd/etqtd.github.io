@@ -1,0 +1,364 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    font-family:Arial, Helvetica, sans-serif;
+    background-image: url(/assets/img/FONDO2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header {
+    background-color: #ecbb00;
+    padding: 25px;
+    margin-top: 0px;
+    opacity: 0.8;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+    a{
+        font-size: 5px;
+    }
+    /*border-radius: 50px;*/
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
+    padding: 0 15px;
+}
+
+section.nav-left, section.nav-right {
+    display: flex;
+}
+section ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+    display: flex;
+}
+
+section ul li {
+    margin: 0 55px; /* Ajusta el margen entre los elementos de la lista */
+}
+
+section ul li a {
+    text-decoration: none;
+    color: black;
+    transition: color 0.5s;
+    transition: background-color 0.5s;
+    transition: padding 0.5s;
+    border-radius: 80px;
+    font-weight: bold;
+}
+
+a:hover{
+    color: white;
+    padding: 15px 1px 15px 1px;
+    background-color: black;
+}
+
+.logo-container {
+    position: absolute;
+    width: 150px;
+    height: 100px;
+    left: 45%;
+    top: -11px;
+    border-radius: 10px;
+}
+
+.logo {
+    max-width: 180px;
+    padding-bottom: 20px;
+}
+
+
+#carrusel1 .carousel-inner{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 0px 35px 0px 35px;
+    width: 1349px;
+    height: 500px;
+}
+
+#parrafo{
+    display: inline-flex;
+}
+
+#parrafo article{
+    text-align: center;
+    padding-top: 10px;
+    margin-bottom: 10px;
+}
+
+.foto1, #foto1{
+    width: 100%; 
+    height: 3000PX; 
+    max-height: 500px; 
+    object-fit: cover; 
+    padding: 20px;
+    border-radius: 30px;
+    border: solid 4px #000000b9;
+    margin-top: 25px;
+}
+
+#parrafo .sobre-nosotros{
+    margin-left: 20px;
+    margin-top: 25px;
+    background-color: #000000be;
+    padding: 125px 10px 15px 10px;
+    border-radius: 30px;
+    border: solid 3px #ecbb00;
+    color: #ffffff;
+    opacity: 0.9;
+    h3{
+        color: #ecbb00;
+        font-weight: bold;
+    }
+}
+
+#portafolio{
+    
+    background-color: #ecbb00;
+    font-weight: bold;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    margin-top: 45px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 100px;
+    opacity: 0.8;
+
+    h4{
+        font-family:Arial, Helvetica, sans-serif;
+        text-align: center;
+        color: rgb(0, 0, 0);
+        font-weight: bold;
+    }
+}
+
+#main-porta{
+    display: inline-flex;
+    margin-top: 5px;
+    padding-right: 20px;
+    padding-left: 20px;
+
+    article{
+        border-radius: 10px;
+        box-shadow: 2px rgba(24, 136, 156, 0.9);
+        margin: 10px;
+        padding: 10px;
+    }
+}
+
+.main-porta1{
+    background-color: #000000ab;
+    p{
+        color: white;
+    }
+    h2{
+        color: #fcfcfc;
+    }
+}
+
+.main-porta2{
+    background-color: #000000ab;
+    p{
+        color: white;
+    }
+    h2{
+        color: #fcfcfc;
+    }
+}
+.main-porta3{
+    background-color: #000000ab;
+    p{
+        color: white;
+    }
+    h2{
+        color: #fcfcfc;
+    }
+}
+
+article img {
+    width: 100%; /* Ajusta el tamaño de la imagen al ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block; /* Elimina el espacio debajo de la imagen */
+}
+
+#Redes1 {
+    display: flex; /* Usar flexbox para apilar artículos */
+    flex-direction: column; /* Apilar artículos verticalmente */
+    text-align: center;
+      
+}
+
+#Redes1 ul li a{
+    list-style-type: none;
+   
+    text-decoration: none;
+    color: black;
+}
+#Redes1 ul li a:hover{
+background-color: white;
+}
+
+
+#footer1 {
+    background-color: #ecbb00; 
+    padding: 10px 0;
+    margin-top: 10px;
+    opacity: 0.8;
+    h4{
+        color: #f8f5f5;
+        font-weight: bold;
+    }
+
+    
+        #face{
+            color: blue;
+        }
+        #insta{
+            color: rgb(107, 3, 107);
+        }
+        #whats{
+            color: green;
+        }
+    
+}
+
+.Sociales  {
+    text-align: center;
+}
+    
+.art {
+    text-align: center;
+
+    ul{
+        margin-left: 300px;
+    }
+}
+
+.art1{
+    margin-left: 9px;
+    color: #080808;
+    font-weight: bold;
+    ul{
+        margin-left: 320px;
+    }
+}
+
+#Derechos{
+    background-color: #252525;
+    color: white;
+    text-align: center;
+    padding: 20px 0 10px 0;
+}
+
+.form {
+    max-width: 800px;
+    margin: auto;
+    padding: 50px;
+    
+}
+.form .form-control:valid,.form .form-select:valid,.form .form-check-input:valid {
+    border-color: #ff0; 
+}
+.form .form-control:invalid, .form .form-select:invalid,.form .form-check-input:invalid {
+    border-color: #ecbb00; 
+}
+.form .form-control,.form .form-select,.form .input-group {
+    padding: 10px;
+}
+.form .btn-primary {
+    background-color: #000; 
+    border-color: #ff0; 
+    color: #ff0; 
+}
+.form .form-label {
+    color: #000; 
+    font-weight: bold;
+}
+.Informacion{
+    text-align: center;
+    padding-top: 50px;
+    color: #f8f7f4;
+}
+.Informacion h1 {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #facd05;
+    
+}
+.Informacion h5{
+    color: #000;
+}
+
+#main-porta {
+    display: inline-flex;
+    margin-top: 5px;
+    padding-right: 20px;
+    padding-left: 20px;
+    text-align: center;
+}
+
+article {
+    border-radius: 10px;
+    box-shadow: 2px rgba(24, 136, 156, 0.9);
+    margin: 10px;
+    padding: 10px;
+    overflow: hidden; /* Evita el desbordamiento */
+}
+
+.main-porta1, .main-porta2, .main-porta3 {
+    background-color: #000000ab;
+}
+
+.main-porta1 p, .main-porta2 p, .main-porta3 p {
+    color: white;
+}
+
+.main-porta1 h2, .main-porta2 h2, .main-porta3 h2 {
+    color: #fcfcfc;
+}
+
+/* Ajustes para el carrusel */
+.carousel-inner {
+    max-height: 400px; /* Altura máxima del carrusel */
+}
+
+.carousel-inner img {
+    width: 100%; /* La imagen ocupa el 100% del contenedor */
+    height: 400px; /* Establece una altura fija */
+    object-fit: cover; /* Mantiene la proporción y recorta si es necesario */
+    display: block; /* Elimina el espacio debajo de la imagen */
+}
+
+
+article img {
+    width: 100%; /* Ajusta el tamaño de la imagen al ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block; /* Elimina el espacio debajo de la imagen */
+}
+
+
+
+@font-face {
+    font-family: 'mifuente';
+    src: url('/assets/font/Hey\ Comic.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+h3{
+    font-family: 'mifuente';
+}
+
+#contac{
+    font-size: 55px;
+}
+
+
+
