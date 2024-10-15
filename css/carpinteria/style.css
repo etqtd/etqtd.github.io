@@ -2,7 +2,7 @@ body{
     margin: 0%;
     padding: 0%;
     font-family:Arial, Helvetica, sans-serif;
-    background-image: url(/assets/img/FONDO2.jpg);
+    background-image: url(/assets/carpinteria/img/FONDO2.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -348,7 +348,7 @@ article img {
 
 @font-face {
     font-family: 'mifuente';
-    src: url('/assets/font/Hey\ Comic.ttf') format('truetype');
+    src: url('/assets/carpinteria/font/Hey\ Comic.ttf') format('truetype');
     font-style: normal;
     font-weight: normal;
 }
