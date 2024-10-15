@@ -1,0 +1,266 @@
+main{
+    margin-top: 0px;
+}
+
+header{
+    position: sticky;
+    top: 1px;
+    z-index: 1;
+    background-color: rgb(1, 2, 37);
+    padding-bottom: 50px;
+    border-bottom: solid 1px black;
+
+}
+html{
+    border-top: solid 1px rgb(15, 16, 66);
+}
+nav ul{
+    margin: 0;
+    li{
+        display: inline-flex;
+        padding: 50px 25px 0px 25px;
+        font-weight: bold;
+        a{
+            color: white;
+            text-decoration: none;
+            transition: all 0.5s;
+            
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+    }
+
+#img-icono{
+        border-radius: 55px;
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        height: 100px; width: 100px;
+    }
+}
+a:hover{
+    transition: all 0.5s;
+    color: black;
+    padding: 5px;
+    background-color: white;
+    border-radius: 5px;
+    font-weight:bolder;
+}
+.main-article{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: relative;
+    
+    h3{
+        top: 130px;
+        right: 60px;
+        font-size: 70px;
+        color: black;
+        position: absolute;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: white;
+        font-family: 'Titulo';
+    }
+    .etq{
+        position: absolute;
+        width: 200px;
+        height: 100px;
+        right: 60px;
+        top: 230px;
+        border-radius: 30px;
+    }
+    .eñe{
+        position: absolute;
+        right: 390px;
+        top: 90px;
+    }
+    .tilde{
+        position: absolute;
+        right: 130px;
+        top: 110px;
+    }
+    img{
+        width: 100%;
+        height: 500px;
+    }
+}
+@font-face {
+    font-family: 'Titulo';
+    src: url('/assets/font/albanileria/font/Akira\ Expanded\ Demo.otf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+.main-datos{
+    display: inline-flex;
+    a{
+        text-decoration: none;
+    }
+    .main-datos-a1{
+        background-color: rgb(9, 16, 51);
+        color: white;
+        padding: 20px 60px 20px 60px;
+        text-align: center;
+    }
+    .main-datos-a2{
+        background-color: rgb(8, 37, 17);
+        color: white;
+        padding: 20px 140px 20px 140px;
+        text-align: center;
+    }
+}
+.carrusel{
+    padding: 30px 30px 30px 30px;
+    h5 {
+        color: black;
+        font-size: xx-large;
+    }
+    p{
+        color: black;
+        font-size: xx-large;
+    }
+}
+footer{
+    background-color: black;
+    color: white;
+    .Derechos{
+        text-align: center;
+        padding: 10px 20px 1px 20px;
+        font-weight: bolder;
+    }
+    
+}
+.conquito:hover{
+    color: white;
+    background-color: black;
+}
+.perfiles{
+    display: inline-flex;
+    article{
+        text-align: center;
+        margin: 10px;
+        background-color: rgba(3, 7, 4, 0.781);
+        padding: 20px 70px 20px 70px;
+        color: white;
+        border-radius: 20px;
+        box-shadow: black 4px 4px 10px;
+        h1{
+            margin-top: 10px;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        a:hover{
+            color: black;
+        }
+        img{
+            width: 150px;
+            height: 200px;
+            border-radius: 15px;
+        }
+    }
+}
+.foto:hover{
+    padding: 10px;
+    transition: all 0.8s;
+    border-radius: 30px;
+}
+.estudiantes{
+    text-align: center;
+    h1{
+        opacity: 0.8;
+        color: rgb(7, 7, 7);
+        padding: 20px 20px 0px 20px;
+        border-bottom:  3px solid rgb(14, 13, 13);
+        margin: 10px 500px 10px 500px;
+        -webkit-text-stroke: 2px black;
+        font-size: 50px;
+    }
+}
+.trabajos{
+    h1{
+        opacity: 0.8;
+        color: rgb(7, 7, 7);
+        padding: 20px 20px 0px 20px;
+        border-bottom:  3px solid rgb(14, 13, 13);
+        margin: 10px 370px 10px 370px;
+        text-align: center;
+        -webkit-text-stroke: 2px black;
+        font-size: 50px;
+    }
+    section{
+        display: inline-flex;
+        margin: 10px 100px 10px 100px;
+        border-radius: 10px;
+        article{
+            padding: 10px;
+            margin: 10px;
+            img{
+                width: 400px;
+                height: 200px;
+                border-radius: 10px;
+            }
+        }
+    }
+    .section1{
+        margin-bottom: -10px;
+    }
+    .section2{
+        margin-top: -10px;
+    }
+}
+.cuerpo{
+    background-image: url(/assets/img/albanileria/img/fondooo.jpg) ;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.teoria{
+    article{
+        background-color: rgba(255, 255, 255, 0.719);
+        float: left;
+        width: 45%;
+        margin: 10px 30px 10px 30px;
+        padding: 15px;
+        border-radius: 10px;
+        ul{
+            li{
+                font-weight: bolder;
+                font-size: 20px;
+            }
+        }
+    }
+    .sistema{
+        width: 50%;
+        margin: 10px 350px 10px 350px;
+    }
+    h3{
+        font-weight: bolder;
+        text-align: center;
+    }
+    h1{
+        opacity: 0.8;
+        color: rgb(7, 7, 7);
+        padding: 20px 20px 0px 20px;
+        border-bottom:  3px solid rgb(14, 13, 13);
+        margin: 10px 300px 10px 300px;
+        text-align: center;
+        -webkit-text-stroke: 2px black;
+        font-size: 50px;
+    }
+}
+.trabajos-a{
+    h1{
+        opacity: 0.8;
+        color: rgb(7, 7, 7);
+        padding: 20px 20px 0px 20px;
+        border-bottom:  3px solid rgb(14, 13, 13);
+        margin: 10px 300px 10px 300px;
+        text-align: center;
+        -webkit-text-stroke: 2px black;
+        font-size: 50px;
+    }
+        .carrusel-a{
+            padding: 30px 150px 30px 150px;
+            
+    }
+}
