@@ -1,0 +1,111 @@
+*,*::after,*::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'harvest';
+}
+
+@font-face {
+    font-family: 'harvest';
+    src: url(/assets/font/Harvest.otf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    background-image: url(/assets/img/gestionderesiduos/img1.jpeg);
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    
+    nav{background-color: rgba(218, 218, 218, 0.9); border-bottom: solid 1.5px black; border-top: solid 1.5px black;}
+    
+    .nav-gestion{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        
+        .flex-img{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex-grow: 0.7;
+            
+            img{
+                width: 5vw;
+                border-left: solid 1.5px black;
+                border-right: solid 1.5px black;
+            }
+        }
+        
+        .opciones {
+            align-content: center;
+            flex-grow: 1;
+            
+            ul{
+                align-items: center;
+                gap: 30px;
+                margin: 0;
+                padding-left: 100px;
+                display: flex;
+                
+                li, a{
+                    list-style-type: none;
+                    text-decoration: none;
+                    color: black;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
+
+main{
+    flex-grow: 1;
+    justify-content: space-evenly;
+
+    .carrusel{
+        justify-content: space-between;
+        background-color: rgba(146, 255, 37, 0.85);
+        border-bottom: solid 1px black;
+
+        #carouselExampleSlidesOnly{
+            padding: 1% 19% 1% 19%;
+
+            img{
+                height: 550px;
+                border-radius: 20px;
+            }
+        }
+    }
+
+    .sec-mision-vision{
+        background-color: rgba(214, 214, 214, 0.9);
+        display: flex;
+        margin: 5% 9.5% 5% 9.5%;
+        text-align: center;
+        border: 4px groove green;
+        border-radius: 70px 0px;
+
+        h3{font-size: 4rem; padding-top: 20px;}
+        p{text-align: justify; font-size: 1.5rem; padding: 0 20px 0 20px;}
+
+        .mis-vis-img{
+            img{
+                height: 25vw;
+                border-right: groove 3.5px brown;
+                border-left: groove 3.5px brown;
+            }
+        }
+    }
+}
