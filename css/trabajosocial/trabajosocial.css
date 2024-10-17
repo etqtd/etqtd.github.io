@@ -60,21 +60,21 @@
 }
 
 .header-content h1 {
-    font-size: 80px; /* Aumentar un poco el tamaño */
+    font-size: 80px;
     line-height: 85px;
-    color: rgba(255, 255, 255, 0.9); /* Color blanco semi-transparente para contrastar mejor sobre imágenes oscuras */
+    color: rgba(255, 255, 255, 0.9);
     text-transform: uppercase;
     margin-bottom: 20px;
-    padding: 0 30px; /* Aumenta el padding para dar más espacio alrededor */
-    font-weight: 900; /* Más grosor para hacer el texto más llamativo */
-    letter-spacing: 2px; /* Espaciado entre letras para dar una sensación más amplia */
-    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.6); /* Sombra de texto para mayor contraste y legibilidad */
-    transition: all 0.3s ease-in-out; /* Transición suave en cambios */
+    padding: 0 30px; 
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.6);
+    transition: all 0.3s ease-in-out; 
 }
 
 .header-content h1:hover {
-    color: rgba(255, 255, 255, 1); /* El color se vuelve totalmente blanco al pasar el mouse */
-    transform: scale(1.05); /* Efecto de zoom ligero al hacer hover */
+    color: rgba(255, 255, 255, 1); 
+    transform: scale(1.05); 
 }
 
 .header-content p{
@@ -497,6 +497,14 @@
     }
 }
 
+.video{
+    margin-left: 350px;
+}
+@media(max-width: 768px){
+    .video{
+        margin-left: 10px;
+    }
+}
 
 .footer {
     padding: 60px 0;
@@ -513,6 +521,7 @@
     flex-wrap: wrap;
     max-width: 1200px;
     margin: 0 auto;
+    align-items: center;
 }
 
 .link {
