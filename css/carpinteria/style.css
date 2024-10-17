@@ -107,10 +107,11 @@ a:hover{
 }
 
 #parrafo .sobre-nosotros{
+    flex-shrink: 1.4;
     margin-left: 20px;
     margin-top: 25px;
     background-color: #000000be;
-    padding: 125px 10px 15px 10px;
+    padding: 125px 10px 15px 20px;
     border-radius: 30px;
     border: solid 3px #ecbb00;
     color: #ffffff;
@@ -142,20 +143,22 @@ a:hover{
 }
 
 #main-porta{
-    display: inline-flex;
+    display: flex;
+    justify-content: center;
     margin-top: 5px;
     padding-right: 20px;
     padding-left: 20px;
-
     article{
         border-radius: 10px;
-        box-shadow: 2px rgba(24, 136, 156, 0.9);
+        box-shadow: 5px 5px 5px black;
         margin: 10px;
         padding: 10px;
     }
 }
 
 .main-porta1{
+    width: 30%;
+    height: 650px;
     background-color: #000000ab;
     p{
         color: white;
@@ -166,6 +169,8 @@ a:hover{
 }
 
 .main-porta2{
+    width: 30%;
+    height: 650px;
     background-color: #000000ab;
     p{
         color: white;
@@ -175,6 +180,8 @@ a:hover{
     }
 }
 .main-porta3{
+    width: 30%;
+    height: 60%;
     background-color: #000000ab;
     p{
         color: white;
