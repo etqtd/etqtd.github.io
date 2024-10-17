@@ -5,187 +5,153 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agricultura Urbana</title>
     <link rel="stylesheet" href="/css/agriculturaurbana/style.css">
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="shortcut icon" href="ASENT/img/agricultura.png" type="image/x-icon">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="icon" href="assets/img/agricultura.png" type="image/x-icon">
 </head>
 <body>
+
+    <!-- Encabezado -->
     <header>
         <div class="logo">
-           <img style="width: 240px; height: 100px;" src="/assets/img/agriculturaurban/img/Logo de granja agricultura orgánico verde y marrón (1).png" alt="">
+            <img src="/assets/img/agriculturaurban/img/Logo de granja agricultura orgánico verde y marrón (1).png" alt="Logo Agricultura Urbana">
         </div>
         <nav>
             <ul>
                 <li><a href="#servicios">Servicios</a></li>
                 <li><a href="#productos">Productos</a></li>
-                <li><a href="#Galeria de Imagenes">Galeria de Imagenes</a></li>
+                <li><a href="#galeria">Galería</a></li>
                 <li><a href="#contacto">Contacto</a></li>
-                
             </ul>
         </nav>
     </header>
 
-    
-    <section class="carusel">
-
-        <div id="carouselExampleCaptions" class="carousel slide">
+    <!-- Carrusel Principal -->
+    <section class="carousel">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></button>
             </div>
             <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="/assets/img/agriculturaurban/img/WhatsApp Image 2024-09-17 at 1.45.34 PM.jpeg" class="d-block w-100" alt="">
-                <div id="text-carrusel" class="carousel-caption d-none d-md-block">
-                <h2> Devuelve el verde a la ciudad. <br> Produce tus propios alimentos desde tu casa, libres de  pesticidas químicos, de forma amigable con el medio ambiente.</h2>
-                
+                <div class="carousel-item active">
+                    <img src="/assets/img/agriculturaurban/img/WhatsApp Image 2024-09-17 at 1.45.34 PM.jpeg" class="d-block w-100" alt="Imagen 1">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>Devuelve el verde a la ciudad.</h2>
+                        <p>Produce alimentos desde tu casa, libres de pesticidas.</p>
+                    </div>
                 </div>
-              </div>
-              <div class="carousel-item">
-                <img src="/assets/img/agriculturaurban/img/WhatsApp Image 2024-09-20 at 9.27.48 AM.jpeg" class="d-block w-100" alt="...">
-                <div id="text-carrusel" class="carousel-caption d-none d-md-block">
-                  <h2>La Agricultuta Urbana <br> fortalece las comunidades, genera empleo y reduce la dependencia de importaciones.</h2>
+                <div class="carousel-item">
+                    <img src="/assets/img/agriculturaurban/img/WhatsApp Image 2024-09-20 at 9.27.48 AM.jpeg" class="d-block w-100" alt="Imagen 2">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>Fortalece las comunidades.</h2>
+                        <p>Genera empleo y reduce la dependencia de importaciones.</p>
+                    </div>
                 </div>
-              </div>
-              <div class="carousel-item">
-                <img src="/assets/img/agriculturaurban/img/WhatsApp Image 2024-09-19 at 10.51.18 AM.jpeg" class="d-block w-100" alt="...">
-                <div id="text-carrusel" class="carousel-caption d-none d-md-block">
-                  <h2>Cultivar tus propios alimentos es una actividad revolucionaria. <br> Te presentamos el mundo de la Agricultura Urbana. </h2>
+                <div class="carousel-item">
+                    <img src="/assets/img/agriculturaurban/img/WhatsApp Image 2024-09-19 at 10.51.18 AM.jpeg" class="d-block w-100" alt="Imagen 3">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>Cultivar alimentos es revolucionario.</h2>
+                        <p>Descubre la Agricultura Urbana.</p>
+                    </div>
                 </div>
-              </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
+                <span class="carousel-control-prev-icon"></span>
+                <span class="visually-hidden">Anterior</span>
             </button>
             <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
+                <span class="carousel-control-next-icon"></span>
+                <span class="visually-hidden">Siguiente</span>
             </button>
-          </div>
-
+        </div>
     </section>
 
-   
-    <br>
-    <br>
-    <br>
-    <section id="hero" class="hh">
-        <article>
-            <h1> Agricultura Urbana </h1>
-            <p>¡Hola!<br>Somos el oficio de Agricultura Urbana de la Escuela Taller Quito. <br> Nos dedicamos a la producción orgánica  de plantas, hortalizas, <br> medicinales y ornamentales e insumos orgánicos agrícolas  para <br> huertos y jardines urbanos.  Brindamos capacitaciones y asistencia <br> técnica a público en general en diseño e implementación de huertos, <br> abonos orgánicos, control de plagas y enfermedades <br> y poda y mantenimiento de jardines.  </p>
-        </article>
-        <article>
-            <p><img src="/assets/img/agriculturaurban/img/plantasion.jpeg" alt="" srcset=""></p>
-        </article>
+    <!-- Sección Hero -->
+    <section id="hero">
+        <div class="container">
+            <h1>Agricultura Urbana</h1>
+            <p>Somos un equipo dedicado a la producción orgánica de plantas y alimentos.</p>
+            <img style="width:75vw ;" src="/assets/img/agriculturaurban/img/plantasion.jpeg" alt="Imagen Agricultura Urbana">
+        </div>
     </section>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
- 
 
+    <!-- Sección de Servicios -->
     <section id="servicios" class="section">
         <h3>Nuestros Servicios</h3>
-        <br>
         <div class="services">
             <div class="service">
                 <h4>Poda y Mantenimiento</h4>
-                <p>Te ayudamos a mantener tus arboles , muy cuidados , con la poda y mantenimiento </p>
-                <img src="/assets/img/agriculturaurban/img/WhatsApp Image 2024-09-20 at 8.52.14 AM (1).jpeg" style="width: 300px; border-radius: 30px;">
+                <p>Mantenemos tus árboles con servicios especializados.</p>
+                <img src="/assets/img/agriculturaurban/img/WhatsApp Image 2024-09-17 at 2.17.21 PM.jpeg" alt="Poda y Mantenimiento">
             </div>
             <div class="service">
                 <h4>Asesoramiento</h4>
-                <p>Servicio de monitoreo y control de plagas y enfermedades en huertos y jardines</p>
-                <img src="/assets/img/agriculturaurban/img/WhatsApp Image 2024-09-20 at 8.52.13 AM (1).jpeg" style="width: 300px; border-radius: 30px;" >
+                <p>Monitoreo y control de plagas en huertos urbanos.</p>
+                <img src="/assets/img/agriculturaurban/img/WhatsApp Image 2024-09-20 at 8.52.12 AM.jpeg" alt="Asesoramiento">
             </div>
             <div class="service">
                 <h4>Capacitaciones</h4>
-                <p>Capacitación en diseño e implementación de huertos urbanos con enfoque orgánico.</p>
-                <img src="/assets/img/agriculturaurban/img/WhatsApp Image 2024-09-20 at 8.52.14 AM.jpeg" style="width: 300px; height:-20px; border-radius: 30px;">
+                <p>Capacitación en el diseño de huertos con enfoque orgánico.</p>
+                <img src="/assets/img/agriculturaurban/img/WhatsApp Image 2024-09-20 at 10.05.58 AM.jpeg" alt="Capacitaciones">
             </div>
-
-            
         </div>
     </section>
 
-    <section id="productos" class="section1">
+    <!-- Sección de Productos -->
+    <section id="productos" class="section">
         <h3>Nuestros Productos</h3>
-        <br>
         <div class="products">
             <div class="product">
-                <h4>Plantulas</h4>
-                <p>Plántulas de hortalizas (brócoli, coliflor, lechuga, remolacha, cebolla)</p>
-                <img src="/assets/img/agriculturaurban/img/WhatsApp Image 2024-09-20 at 8.52.13 AM.jpeg" style=" width: 300px; border-radius: 30PX;">
+                <h4>Plántulas</h4>
+                <p>Plántulas de hortalizas como brócoli, lechuga y más.</p>
+                <img src="assets/img/producto1.jpeg" alt="Plántulas">
             </div>
             <div class="product">
                 <h4>Plantas Ornamentales</h4>
-                <p>Cactus y suculentas ornamentales</p>
-                <img src="/assets/img/agriculturaurban/img/WhatsApp Image 2024-09-20 at 8.52.12 AM.jpeg" style=" width:350px;  border-radius :30px;">
+                <p>Cactus y suculentas decorativas.</p>
+                <img src="assets/img/producto2.jpeg" alt="Plantas Ornamentales">
             </div>
             <div class="product">
                 <h4>Insumos</h4>
-                <p>Insumos orgánicos (compost, humus, y biol).</p>
-                <img src="/assets/img/agriculturaurban/img/WhatsApp Image 2024-09-20 at 8.52.10 AM.jpeg" style="width: 300px; border-radius: 30px;">
+                <p>Compost y humus orgánico.</p>
+                <img src="assets/img/producto3.jpeg" alt="Insumos">
             </div>
         </div>
     </section>
-    <br>
-    <br>
-    <br>
 
-    <section id="Galeria de Imagenes"class="carousel1" >
-
-        <h3>Galeria de Imagenes</h3>
-
-        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2700">
+    <!-- Sección de Galería -->
+    <section id="galeria">
+        <h3>Galería de Imágenes</h3>
+        <div id="carouselGallery" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="/assets/img/agriculturaurban/img/plantasion.jpeg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="/assets/img/agriculturaurban/img/WhatsApp Image 2024-09-17 at 2.17.21 PM.jpeg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="/assets/img/agriculturaurban/img/WhatsApp Image 2024-09-17 at 2.17.23 PM.jpeg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="/assets/img/agriculturaurban/img/WhatsApp Image 2024-09-18 at 11.01.27 AM.jpeg" class="d-block w-100" alt="...">
-              </div>
-
-              <div class="carousel-item">
-                <img src="/assets/img/agriculturaurban/img/WhatsApp Image 2024-09-19 at 10.51.18 AM.jpeg" class="d-block w-100" alt="...">
-              </div>
-
-              <div class="carousel-item">
-                <img src="/assets/img/agriculturaurban/img/WhatsApp Image 2024-09-19 at 10.51.18 AM (1).jpeg" class="d-block w-100" alt="...">
-              </div>
+                <div class="carousel-item active">
+                    <img src="assets/img/galeria1.jpeg" class="d-block w-100" alt="Galería 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/galeria2.jpeg" class="d-block w-100" alt="Galería 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/galeria3.jpeg" class="d-block w-100" alt="Galería 3">
+                </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselGallery" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+                <span class="visually-hidden">Anterior</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselGallery" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+                <span class="visually-hidden">Siguiente</span>
             </button>
-          </div>
-        
+        </div>
     </section>
 
-    <section id="contacto" class="section contact">
+    <!-- Contacto -->
+    <footer id="contacto">
         <h3>Contacto</h3>
-        <p>Para más información, contáctanos a través de nuestro numero de WhatsApp, enviando un mensaje.</p>
-        <a target="_blank" href="https://walink.co/f97235">Enviar Mensaje</a>
-    </section>
-
-    <footer>
-        <p>&copy; Jared .V y Anthony .R 2024. Todos los derechos reservados.</p>
+        <p>Escríbenos a: contacto@agriculturaurbana.com</p>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
