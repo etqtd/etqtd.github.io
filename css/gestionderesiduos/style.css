@@ -530,5 +530,30 @@ footer{
                 margin: 0;
             }
         }
+
+        .sec-historia{
+            .titulo-hist{height: 30px; h3{font-size: 1.7rem;}}
+            .parrafo-hist{div{height: 120px;}}
+        }
+    }
+}
+
+@media(max-width: 585px){
+    header nav{
+        .nav-gestion{
+            .flex-img{flex-grow: 0;}
+            .opciones ul{
+                text-align: center;
+                gap: 15px;
+                a{font-size: 0.8rem;}
+            }
+        }
+    }
+
+    main{
+        .sec-historia{
+            .titulo-hist{height: 30px; h3{font-size: 1.7rem;}}
+            .parrafo-hist{div{height: 100px;}}
+        }
     }
 }
