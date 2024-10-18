@@ -59,48 +59,40 @@ header{
 
 .main-article{
     position: relative;
+    display: flex;
     h2{
+        flex-wrap: wrap;
         top: 18%;
-        right: 5.5%;
-        font-size: 440%;
+        right: 5%;
+        font-size: 500%;
         color: black;
         position: absolute;
-        -webkit-text-stroke: 0.1vh white ;
+        -webkit-text-stroke: 0.2vh white ;
         font-family: 'Titulo';
         padding: 1%;
-        margin: 1%;
-    }
-    div{
-        .fondo-p{
-            padding: 0%;
-            width: 100%;
-            height: 10%;    
-        }
+        margin: 0;
     }
     div{
         .etq{
             position: absolute;
-            width: 14%;
-            height: 14%;
-            right: 120px;
-            top: 30%;
-            border-radius: 1rem;
+            width: 20%;
+            height: 20%;
+            right: 7%;
+            top: 35%;
+            border-radius: 10%;
         }
     }
-    .eñe{
-        position: absolute;
-        right: 30%;
-        top: 13%;
-    }
-    .tilde{
-        position: absolute;
-        right: 10.5%;
-        top: 16%;
+    div{
+        .fondo-p{
+            margin: 0;
+            padding: 0;
+            width: 100%;
+        }
     }
 }
 @font-face {
     font-family: 'Titulo';
-    src: url('/assets/font/Akira\ Expanded\ Demo.otf') format('truetype');
+    src: url('/assets/font/ArchivoBlack-Regular.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
 }
@@ -114,13 +106,15 @@ header{
         text-align: center;
         a{
             text-decoration: none;
-            padding: 10px;
+            padding: 2%;
             color: white;
+            border-radius: 1rem;
+            transition: all 0.8s;
         }    
         a:hover{
             color: green;
             background-color: white;
-            border-radius: 10px;
+            border-radius: 1rem;
             font-weight: bolder;
         }
     }
@@ -165,12 +159,13 @@ footer{
     article{
         text-align: center;
         margin: 1%;
-        background-color: rgba(3, 7, 4, 0.781);
         padding: 1%;
+        background-color: rgba(3, 7, 4, 0.8);
         width: 100%;
+        height: 100%;
         color: white;
-        border-radius: 20px;
-        box-shadow: black 4px 4px 10px;
+        border-radius: 2rem;
+        box-shadow: black 4px 4px 15px;
         h2{
             margin: 2%;
         }
@@ -179,23 +174,27 @@ footer{
             color: white;
         }
         a:hover{
+            font-weight: bolder;
             color: green;
         }
-        img{
-            width: 100%;
-            height: 40%;
-            padding: 1%;
-            border-radius: 15px;
-            transition: all 0.5s;
-        }
-        img:hover{
-            scale: 1.1;
+        div{
+            img{
+                width: 60%;
+                height: 40%;
+                padding: 4%;
+                border-radius: 2rem;
+                transition: all 0.5s;
+            }
+            img:hover{
+                scale: 1.1;
+            }
         }
     }
 }
 .estudiantes{
     text-align: center;
     h2{
+        flex-wrap: wrap;
         opacity: 0.8;
         color: rgb(7, 7, 7);
         font-weight: bolder;
@@ -241,6 +240,7 @@ body{
     min-height: 100vh;
     flex-grow: 1;
     background-image: url(/assets/img/albanileria/img/fondooo.jpg) ;
+    background-image: url(/assets/img/fondooo.jpg) ;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -328,10 +328,16 @@ body{
         }
     }
     .main-article{
-        h3{
-            display: flex;
-            flex-wrap: wrap;
-            flex-grow: 1;
+        section{
+            h2{
+                display: flex;
+                flex-wrap: wrap;
+            }
+            div{
+                .etq{
+                    top: 50%;
+                }
+            }
         }
     }
     .main-datos{
@@ -362,13 +368,22 @@ body{
     }
     .perfiles{
         display: flex;
+        align-items: center;
         flex-direction: column;
         article{
+            width: 70%;
+            h2{
+                flex-wrap: wrap;
+                font-size: 3rem;
+            }
             p{
                 flex-wrap: wrap;
+                font-size: 1.5rem;
             }
-            img{
-                width: 30%;
+            div{
+                img{
+                    width: 30%;
+                }
             }
         }
     }
