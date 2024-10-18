@@ -238,7 +238,13 @@ body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+<<<<<<< HEAD
     background-image: url(/assets/img/albanileria/img/fondooo.jpg) ;
+=======
+    flex-grow: 1;
+    background-image: url(/assets/img/albanileria/img/fondooo.jpg) ;
+    background-image: url(/assets/img/fondooo.jpg) ;
+>>>>>>> a189c94c562e0203726a9ae8a991fbaf995f65a0
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
