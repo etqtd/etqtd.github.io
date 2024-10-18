@@ -92,7 +92,7 @@ header{
 }
 @font-face {
     font-family: 'Titulo';
-    src: url('/assets/font/ArchivoBlack-Regular.ttf') format('truetype');
+    src: url('/assets/font/albanileria/font/ArchivoBlack-Regular.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
 }
