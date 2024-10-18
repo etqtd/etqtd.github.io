@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'MiFuente';
-    src: url('/Estética_Integral/assets/font/Peristiwa.otf') format('truetype');
+    src: url('/assets/font/EsteticaIntegral/Peristiwa.otf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -18,6 +18,6 @@ body{
     h1{
         font-family: 'MiFuente';
         color: fuchsia;
-        font-size: 8vw;
+        font-size: 5vw;
     }
 }

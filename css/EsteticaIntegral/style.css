@@ -55,6 +55,10 @@ body{
                     font-family: 'MiFuente';
                     color: white;
                     font-size: 40px;
+                    transition: color 0.6s;
+                }
+                li:hover{
+                    color: deeppink;
                 }
 
             }
@@ -63,6 +67,7 @@ body{
 
                 ul{
                     margin: 0;
+                    text-align: center;
                 }
 
                 li{
@@ -124,12 +129,10 @@ body{
 
     main{
         z-index: 0;
-
-        section.container{
+        .container{
             text-align: center;
-            padding-top: 10px;            
+            margin-top: 28px;
         }
-        
         section.main-article{
             background-color: violet;
             margin-top: 30px;
@@ -139,8 +142,8 @@ body{
 
             .main-a1{
                 
-                margin-right: 200px;
-                margin-left: 200px;
+                margin-right: 100px;
+                margin-left: 100px;
                 padding-top: 25px;
                 color: white;
 
@@ -209,8 +212,8 @@ body{
             } 
 
              .main-a22{
-                margin-right: 200px;
-                margin-left: 200px;
+                margin-right: 100px;
+                margin-left: 100px;
                 padding-top: 25px;
                 color: violet;
                
@@ -226,6 +229,12 @@ body{
         }
 
         .catalogo{
+            color: white;
+            padding-bottom: 200px;
+            margin: 15px;
+            padding: 10px;
+            text-align: center;
+
             h1{ 
                 font-family: 'MiFuente';    
                 color: fuchsia;
@@ -233,12 +242,6 @@ body{
                 margin: 5px;
                 border: 5px;
             }
-
-            color: white;
-            padding-bottom: 200px;
-            margin: 15px;
-            padding: 10px;
-            text-align: center;
 
             form section{
                 display: flex;
@@ -249,7 +252,11 @@ body{
                     background-color: violet;
                     margin: 20px;
                     border-radius: 10px;
+                    transition: background-color 0.6s;
                     }
+                article:hover{
+                    background-color: hotpink;
+                }
 
                     label.desc{
                         text-align: left;
@@ -293,7 +300,10 @@ footer {
         a{
             text-decoration: none;
             color: fuchsia;
-
+            transition: color 0.6s;
+        }
+        a:hover{
+            color: rgb(255, 0, 136);
         }
         #correo{
             color: fuchsia;
@@ -302,6 +312,12 @@ footer {
             padding-bottom: 10px;
             color: fuchsia;
             font-size: 20px;
+            transition: color 0.6s;
+            transition: 0.3s;
+        }
+        i:hover{
+            color: rgb(255, 0, 136);
+            font-size: 22px;
         }
         
     }
@@ -343,17 +359,13 @@ footer {
       
 
         main{
-            .container {
-                width: 100%;
-                max-width: 1200px; 
-                margin: 0 auto; 
-            }
 
             .main-article{
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                    .main-a1{
+                    article.main-a1{
+                        margin: 0 30px 0 30px;
                         h3{
                             text-align: center;
                         }
@@ -376,8 +388,8 @@ footer {
                     display: flex;
                     margin: 0;
                 } 
-                .main-a22{
-                    margin: 0 100px 0 100px;
+                article.main-a22{
+                    margin: 0 30px 0 30px;
                     h3{
                         text-align: center;
                     }
@@ -387,6 +399,92 @@ footer {
                 }
                                
             }
+
+            .comment{
+                margin: 40px 40px 40px 40px;
+            }
         }
+    }  
+}
+
+@media(max-width: 600px){
+    body{
+        header{
+
+            justify-content: center;
+            .header{
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+
+                article.art1{
+                    display: flex;
+                    justify-content: center;
+                    margin: 0;
+                }
+                article.art2{
+                    display: flex;
+                    ul{
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: center;
+                    }
+                    
+                }
+                article.art3{
+                    display: flex;
+                    justify-content: center;
+                    margin: 0;
+                }
+            }
+        }
+      
+
+        main{
+            .main-article{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                    article.main-a1{
+                        margin: 0 20px 0 20px;
+                        h3{
+                            text-align: center;
+                        }
+                        p {
+                            text-align: justify;
+                        }
+                    }
+                    article.main-a2{
+                        display: flex;
+                        margin: 0;
+                    }            
+            }
+
+            .main-article2{
+                display: flex;
+                flex-direction: column-reverse;
+                align-items: center;
+
+                article.main-a21{
+                    display: flex;
+                    margin: 0;
+                } 
+                article.main-a22{
+                    margin: 0 20px 0 20px;
+                    h3{
+                        text-align: center;
+                    }
+                    p {
+                        text-align: justify;
+                    }
+                }
+                               
+            }
+
+            .comment{
+                margin: 40px 20px 40px 20px;
+            }
+        }
+
     }  
 }
