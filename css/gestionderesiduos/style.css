@@ -21,6 +21,7 @@ body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    width: auto;
 }
 
 header{
@@ -29,12 +30,11 @@ header{
     z-index: 1;
     
     nav{background-color: rgba(218, 218, 218, 0.9); border-bottom: solid 1.5px black; border-top: solid 1.5px black; box-shadow: 0px 5px 40px black;}
-    
     .nav-gestion{
         display: flex;
         justify-content: space-evenly;
         align-items: center;
-        height: 10vh;
+        height: auto;
         
         .flex-img{
             display: flex;
@@ -46,7 +46,8 @@ header{
                 width: 3.5vw;
                 border-radius: 10% 30%;
                 border: 3px groove rgba(54, 217, 0, 0.85);
-                transition: all 1s;
+                transition: all 0.7s;
+                margin: 2%;
             }
         }
         
@@ -87,7 +88,7 @@ main{
 
         #carouselExampleSlidesOnly{
             
-            .carousel-item{padding: 1% 22% 1% 22%;}
+            .carousel-item{padding: 1% 20% 1% 20%;}
             img{
                 height: 550px;
                 width: auto;
@@ -105,13 +106,15 @@ main{
         border-radius: 70px 0px;
         box-shadow: 15px 15px 30px black;
         transition: 0.9s;
+        height: 350px;
 
         h3{font-size: 4rem; padding-top: 20px;}
-        p{text-align: justify; font-size: 1.7rem; padding: 0 20px 0 20px;}
+        p{text-align: justify; font-size: 1.45rem; padding: 0 20px 0 20px;}
 
         .mis-vis-img{
             img{
-                height: 25vw;
+                height: 100%;
+                width: auto;
                 border-right: groove 3.5px brown;
                 border-left: groove 3.5px brown;
                 border-radius: 0% 30%;
@@ -122,6 +125,7 @@ main{
     .sec-quienes-somos{
         display: flex;
         margin: 5% 0% 5% 0%;
+        align-items: center;
         
         .quienes-parrafo{
             background-color: rgba(214, 214, 214, 0.9);
@@ -133,16 +137,19 @@ main{
             border-left: 0px;
             transition: 0.7s;
 
-            h3,p{margin: 2rem 2.5rem 1rem 2rem;}
+            h3,p{margin: 2rem 2.5rem 1.8rem 2rem;}
             p{font-size: 1.5rem;}
             h3{font-size: 3rem;}
         }
         
         .quienes-somos-img{
             margin-right: 5%;
+            height: 320px;
+            width: 450px;
             
             img{
-                height: 55vh;
+                height: 100%;
+                width: auto;
                 border-radius: 15% 70% 15% 70% / 70% 15% 70% 15%;
                 filter: drop-shadow(10px 10px 10px black);
                 border: 3.5px groove rgb(69, 65, 65);
@@ -165,9 +172,11 @@ main{
         .titulo-hist{
             display: inline-flex;
             justify-content: center;
+            height: 45px;
 
             img{
-                height: 8vh;
+                height: 100%;
+                width: auto;
                 margin-left: 2%;
                 border-radius: 10% 30%;
                 border: 3px groove rgba(54, 217, 0, 0.85);
@@ -183,8 +192,10 @@ main{
             margin-top: 3%;
             text-align: center;
 
+            div{height: 215px;}
             img{
-                height: 34vh;
+                height: 100%;
+                width: auto;
                 border-radius: 7% 22% 7% 22%;
                 border: 2px groove brown;
             }
@@ -202,44 +213,26 @@ main{
         text-align: center;
         padding: 2% 4% 2% 4%;
         margin: 5% 0 10% 0;
+        border-radius: 100% 0 / 5% 0;
+        border-top: 4px groove green;
+        border-bottom: 4px groove green;
+        box-shadow: 15px 20px 40px black;
+        gap: 20px 0;
 
-        h3{font-size: 2.3rem;}
-        p{font-size: 1.4rem;}
-
-        /*img{
-            height: 70vh;
-        }
+        h3{font-size: 2.3rem; transition: 0.4s;}
+        p{font-size: 1.3rem; transition: 0.4s;}
 
         .serv-img{
-            height: 150vh;
-            background-image: url(/assets/img/gestionderesiduos/Doc1_page-0001.jpg);
-            background-position: center;
-            background-size: cover;
-            /*mix-blend-mode: screen;
+            display: flex;
+            height: 260px;
+            justify-content: space-evenly;
+
+            img{
+                height: 100%;
+                width: auto;
+                mix-blend-mode: darken
+            }
         }
-
-        figure, .img1{
-            background-image: url("/assets/img/gestionderesiduos/cagre.jpeg");
-            background-position: center;
-            width: 100%;
-            height: auto;
-            mix-blend-mode: cover;
-        }
-
-        figure, .img2{
-            background-image: url("/assets/img/gestionderesiduos/Doc1_page-0001.jpg");
-           
-            background-position: center;
-            background-size: cover;
-            width: 100%;
-            height: auto;
-
-        }
-
-        figure{
-            width: 100%;
-            height: 300px;
-        }*/
     }
 }
 
@@ -254,7 +247,7 @@ footer{
     .footer-contactos{
         display: flex;
         justify-content: space-between;
-        padding: 2% 5% 0.5% 5%;
+        padding: 2% 5% 0% 5%;
         color: white;
         align-content: center;
     }
@@ -301,7 +294,7 @@ footer{
         }
     }
 
-    .logo-kimsa{img{height: 28vh; width: auto; border-radius: 50%; transition: 0.7s;}}
+    .logo-kimsa{text-align: center; height: 210px; width: auto; img{height: 87%; width: auto; border-radius: 50%; transition: 0.7s;}}
 
     .sec-contactos{
         gap: 7px;
@@ -349,3 +342,193 @@ footer{
 .tiktok a:hover{svg{transform: rotate(360deg) scale(1.2);} h4{transform: translateX(10px);}}
 .whatsapp a:hover{svg{transform: rotate(360deg) scale(1.2);} h4{transform: translateX(10px);}}
 .logo-kimsa img:hover{border-radius: 10px;}
+.sec-servicios:hover{h3,p{transform: scale(1.05)};}
+.serv-img img:hover{transform: rotate(10deg) scale(1.06);}
+
+@media(max-width: 1305px){
+    main{
+        .sec-mision-vision{
+            .mision, .vision{h3{font-size: 3.5rem};}
+            .mision, .vision{p{font-size: 1.4rem};}
+        }
+
+        .sec-quienes-somos .quienes-parrafo{
+            h3{font-size: 2.7rem;}
+            p{font-size: 1.2rem;}
+        }
+    }
+}
+
+@media(max-width: 1275px){
+    .carrusel #carouselExampleSlidesOnly .carousel-item{padding: auto; img{height: 500%;}}
+}
+
+@media(max-width: 1150px){
+    main{
+        .sec-mision-vision{
+            .mision, .vision{h3{font-size: 3.2rem};}
+            .mision, .vision{p{font-size: 1.2rem};}
+        }
+    }
+}
+
+@media(max-width: 1030px){
+    main{
+        .sec-mision-vision{
+            height: 320px;
+            margin: 7% 9% 3% 9%;
+
+            .mision, .vision{h3{font-size: 3rem} p{font-size: 1.1rem};}
+        }
+
+        .sec-quienes-somos{
+            margin: 3% 0% 3% 0%;
+
+            .quienes-parrafo{
+                h3{font-size: 2.2rem;}
+                p{font-size: 1.1rem;}
+            }
+
+            .quienes-somos-img{height: 270px;}
+        }
+
+        .sec-historia{
+            margin: 3% 8.5% 3% 8.5%;
+
+            .titulo-hist{height: 39px; h3{font-size: 2.15rem;}}
+            .parrafo-hist{div{height: 180px;} p{font-size: 1.1rem;}}
+        }
+
+        .sec-servicios{
+            margin: 2% 0 8% 0;
+
+            .serv-parrafo{h3{font-size: 1.95rem;} p{font-size: 1.2rem;}}
+            .serv-img{height: 230px;}
+        }
+
+    }
+    
+    footer{
+        .redes-h3{h3{font-size: 1.4rem;}}
+        .facebook a, .instagram a, .tiktok a, .whatsapp a{h4{font-size: 1rem;}}
+        .logo-kimsa{height: 165px;}
+        .contacto{h3{font-size: 1.4rem;} h6{font-size: 1.2rem;}}
+        .footer-copyright p{font-size: 0.75rem;}
+    }
+}
+
+@media(max-width: 905px){
+    header nav{
+        .nav-gestion{
+            .flex-img{flex-grow: 0;}
+            .opciones ul{
+                gap: 15px;
+                padding-left: 121px;
+                a{font-size: 1.1rem;}
+            }
+        }
+    }
+
+    main{
+        .sec-mision-vision{
+            height: 300px;
+            .mision, .vision{h3{font-size: 2.7rem} p{font-size: 1.07rem};}
+        }
+
+        .sec-quienes-somos{
+            .quienes-parrafo{margin-right: 5%; h3,p{margin: 1rem 1.7rem 1rem 1.5rem;} h3{font-size: 1.6rem;}}
+            .quienes-somos-img{height: 235px;}
+        }
+
+        .sec-historia{
+            .titulo-hist{height: 33px; h3{font-size: 2rem;}}
+            .parrafo-hist{div{height: 140px;} p{font-size: 1rem;}}
+        }
+
+        .sec-servicios{
+            .serv-parrafo{h3{font-size: 1.7rem;} p{font-size: 1rem;}}
+            .serv-img{height: 180px;}
+        }
+    }
+
+    footer{
+        .redes-h3{h3{font-size: 1.3rem; margin: 0;}}
+        .facebook a, .instagram a, .whatsapp a{svg{width: 2.1vw;}}
+        .logo-kimsa{height: 150px;}
+        .contacto{h3{font-size: 1.3rem; margin: 0;} h6{font-size: 1.2rem;}}
+        .footer-copyright p{font-size: 0.75rem;}
+    }
+}
+
+@media(max-width: 880px){
+    main{
+        .sec-mision-vision{
+            height: 290px;
+            .mision, .vision{h3{font-size: 2.4rem} p{font-size: 1rem};}
+        }
+
+        .sec-quienes-somos{
+            .quienes-parrafo{margin-right: 4%; h3,p{margin: 1rem 1.7rem 1rem 1.5rem;} h3{font-size: 1.4rem;} p{font-size: 1rem;}}
+            .quienes-somos-img{height: 235px; margin-right: 3%;}
+        }
+    }
+
+    footer{
+        .contacto{h3{font-size: 1.4rem;} h6{font-size: 1rem;}}
+    }
+}
+
+@media(max-width: 750px){
+    header nav{
+        .nav-gestion{
+            flex-direction: column;
+            .flex-img{flex-grow: 0; img{width: 6vw;}}
+            .opciones ul{
+                gap: 15px;
+                padding-left: 0px;
+                a{font-size: 1.1rem;}
+            }
+        }
+    }
+
+    main{
+        text-align: center;
+        .sec-mision-vision{
+            flex-direction: column;
+            height: auto;
+            margin: 5% 15% 5% 15%;
+
+            .mision, .vision{h3{font-size:2.5rem} p{font-size: 1rem};}
+
+            .mis-vis-img{
+                height: auto;
+                width: 100%;
+
+                img{
+                    height: auto;
+                    width: 100%;
+                    border-right: 0;
+                    border-left: 0;
+                    border-top: groove 3.5px brown;
+                    border-bottom: groove 3.5px brown;
+                }
+            }
+        }
+            
+        .sec-quienes-somos{
+            flex-direction: column;
+            gap: 30px;
+            .quienes-parrafo{
+                border-radius: 180% 50% 180% 50% / 25% 20% 25% 20%;
+                border: 3px groove green;
+                margin: 0 5% 0 5%;
+                h3{font-size: 1.9rem;}
+                p{font-size: 1rem;}
+            }
+
+            .quienes-somos-img{
+                margin: 0;
+            }
+        }
+    }
+}
