@@ -11,7 +11,7 @@ body{
 
 header {
     background-color: #ecbb00;
-    padding: 25px;
+    padding: 10px;
     margin-top: 0px;
     opacity: 0.8;
     position: sticky;
@@ -63,7 +63,6 @@ a:hover{
 }
 
 .logo-container {
-    position: absolute;
     width: 150px;
     height: 100px;
     left: 45%;
@@ -76,130 +75,107 @@ a:hover{
     padding-bottom: 20px;
 }
 
-
-#carrusel1 .carousel-inner{
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding: 0px 35px 0px 35px;
-    width: 1349px;
-    height: 500px;
-}
-
-#parrafo{
-    display: inline-flex;
-}
-
-#parrafo article{
-    text-align: center;
-    padding-top: 10px;
-    margin-bottom: 10px;
-}
-
-.foto1, #foto1{
+#carrusel1 {
     width: 100%; 
-    height: 3000PX; 
-    max-height: 500px; 
+    max-height: 400px; 
+    overflow: hidden;
+    margin-top: 15px; 
+}
+
+.carousel-item img {
+    width: 100%; 
+    height: auto; 
     object-fit: cover; 
+}
+
+#parrafo {
+    display: flex; 
+    flex-direction: row; 
+    align-items: center;
     padding: 20px;
-    border-radius: 30px;
-    border: solid 4px #000000b9;
-    margin-top: 25px;
 }
 
-#parrafo .sobre-nosotros{
-    flex-shrink: 1.4;
-    margin-left: 20px;
-    margin-top: 25px;
-    background-color: #000000be;
-    padding: 125px 10px 15px 20px;
-    border-radius: 30px;
-    border: solid 3px #ecbb00;
-    color: #ffffff;
-    opacity: 0.9;
-    h3{
-        color: #ecbb00;
-        font-weight: bold;
-    }
+#parrafo article {
+    text-align: center; 
+    padding: 10px;
+    margin-bottom: 10px; 
 }
 
-#portafolio{
-    
+.foto1 { 
+    margin-right: 20px;
+}
+
+.foto1 img {
+    width: 100%; 
+    max-width: 500px; 
+    height: auto; 
+    border-radius: 30px; 
+    border: solid 4px #000000b9; 
+}
+
+.sobre-nosotros {
+    flex: 1;
+    background-color: #000000be; 
+    border-radius: 30px; 
+    border: solid 3px #ecbb00; 
+    color: #ffffff; 
+    opacity: 0.9; 
+    padding: 50px; 
+}
+
+.sobre-nosotros h3 {
+    font-weight: bold;
+    color: #ecbb00;
+    padding: 70px; 
+}
+
+#portafolio {
     background-color: #ecbb00;
     font-weight: bold;
     padding-top: 20px;
     padding-bottom: 15px;
-    margin-top: 45px;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin: 45px 10px 0;
     border-radius: 100px;
     opacity: 0.8;
-
-    h4{
-        font-family:Arial, Helvetica, sans-serif;
-        text-align: center;
-        color: rgb(0, 0, 0);
-        font-weight: bold;
-    }
 }
 
-#main-porta{
+#portafolio h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+#main-porta {
     display: flex;
+    flex-wrap: wrap; /* Permite que los artículos se ajusten en varias filas */
     justify-content: center;
     margin-top: 5px;
-    padding-right: 20px;
-    padding-left: 20px;
-    article{
-        border-radius: 10px;
-        box-shadow: 5px 5px 5px black;
-        margin: 10px;
-        padding: 10px;
-    }
+    padding: 0 20px;
 }
 
-.main-porta1{
-    width: 30%;
-    height: 650px;
-    background-color: #000000ab;
-    p{
-        color: white;
-    }
-    h2{
-        color: #fcfcfc;
-    }
+.main-porta1, .main-porta2, .main-porta3 {
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px black;
+    margin: 10px;
+    padding: 10px;
+    background-color: #000000ab; 
+    flex: 1; 
+    min-width: 300px; 
+    max-width: 30%; 
 }
 
-.main-porta2{
-    width: 30%;
-    height: 650px;
-    background-color: #000000ab;
-    p{
-        color: white;
-    }
-    h2{
-        color: #fcfcfc;
-    }
-}
-.main-porta3{
-    width: 30%;
-    height: 60%;
-    background-color: #000000ab;
-    p{
-        color: white;
-    }
-    h2{
-        color: #fcfcfc;
-    }
+.main-porta1 h2, .main-porta2 h2, .main-porta3 h2 {
+    color: #fcfcfc;
 }
 
-article img {
-    width: 100%; /* Ajusta el tamaño de la imagen al ancho del contenedor */
-    height: auto; /* Mantiene la proporción de la imagen */
-    display: block; /* Elimina el espacio debajo de la imagen */
+.main-porta1 p, .main-porta2 p, .main-porta3 p {
+    color: white;
 }
 
 #Redes1 {
-    display: flex; /* Usar flexbox para apilar artículos */
-    flex-direction: column; /* Apilar artículos verticalmente */
+    display: flex; 
+    flex-direction: column; 
     text-align: center;
       
 }
@@ -332,23 +308,22 @@ article {
     color: #fcfcfc;
 }
 
-/* Ajustes para el carrusel */
 .carousel-inner {
-    max-height: 400px; /* Altura máxima del carrusel */
+    max-height: 400px; 
 }
 
 .carousel-inner img {
-    width: 100%; /* La imagen ocupa el 100% del contenedor */
-    height: 400px; /* Establece una altura fija */
-    object-fit: cover; /* Mantiene la proporción y recorta si es necesario */
-    display: block; /* Elimina el espacio debajo de la imagen */
+    width: 100%; 
+    height: 400px; 
+    object-fit: cover; 
+    display: block; 
 }
 
 
 article img {
-    width: 100%; /* Ajusta el tamaño de la imagen al ancho del contenedor */
-    height: auto; /* Mantiene la proporción de la imagen */
-    display: block; /* Elimina el espacio debajo de la imagen */
+    width: 100%; 
+    height: auto; 
+    display: block; 
 }
 
 
@@ -367,5 +342,82 @@ h3{
     font-size: 55px;
 }
 
+*,*::after,::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
+@media (max-width: 900px) {
+    header {
+        padding: 10px;
+        margin-top: 0px;
+        margin-bottom: 15px;
+        opacity: 0.8;
+        position: initial;
+        top: 0px;
+        z-index: 1;
+    }
 
+    nav {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    section ul {
+        flex-direction: column; 
+        align-items: center; 
+        width: 100%;
+    } 
+
+    .logo-container {
+        position: static; 
+    }
+
+    #carrusel1 {
+        max-height: 300px; 
+    }
+    .carousel-item img {
+        height: auto; 
+        object-fit: cover;
+    }
+
+    #parrafo {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .foto1 {
+        margin-right: 0; 
+        margin-bottom: 20px; 
+    }
+
+    .sobre-nosotros {
+        text-align: center; 
+        margin-left: 0; 
+    }
+
+    .foto1 img {
+        max-height: 600px; 
+    }
+
+    @media (max-width: 768px) {
+        .main-porta1, .main-porta2, .main-porta3 {
+            max-width: 100%; 
+        }
+    }
+    
+    @media (max-width: 480px) {
+        #portafolio {
+            margin: 30px 5px; 
+        }
+    
+        .main-porta1, .main-porta2, .main-porta3 {
+            padding: 5px; 
+        }
+    
+        .main-porta1 h2, .main-porta2 h2, .main-porta3 h2 {
+            font-size: 1.2em;
+        }
+    }
+}
