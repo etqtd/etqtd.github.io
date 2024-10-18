@@ -89,54 +89,55 @@ a:hover{
 }
 
 #parrafo {
-    display: flex; 
-    flex-direction: row; 
-    align-items: center;
-    padding: 20px;
-}
-
-#parrafo article {
-    text-align: center; 
-    padding: 10px;
-    margin-bottom: 10px; 
-}
-
-.foto1 { 
-    margin-right: 20px;
-}
-
-.foto1 img {
-    width: 100%; 
-    max-width: 500px; 
-    height: auto; 
-    border-radius: 30px; 
-    border: solid 4px #000000b9; 
-}
-
-.sobre-nosotros {
+    display: flex;
+    flex-direction: row;
+    margin: 0 50px;
+    gap: 25px;
+  }
+  
+  #parrafo article {
+    text-align: justify;
+    padding: 50px;
     flex: 1;
-    background-color: #000000be; 
-    border-radius: 30px; 
-    border: solid 3px #ecbb00; 
-    color: #ffffff; 
-    opacity: 0.9; 
-    padding: 50px; 
-}
-
-.sobre-nosotros h3 {
+  }
+  
+  .foto1 img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 30px;
+    border: 4px solid rgba(0, 0, 0, 0.73);
+  }
+  
+  .sobre-nosotros {
+    background-color: rgba(0, 0, 0, 0.74);
+    border-radius: 30px;
+    border: 3px solid #ecbb00;
+    color: #ffffff;
+    opacity: 0.9;
+    margin-bottom: 15px;
+    padding: 20px;
+    text-align: justify;
+  }
+  
+  .sobre-nosotros h3 {
     font-weight: bold;
     color: #ecbb00;
-    padding: 70px; 
-}
+    margin: 0;
+    padding: 15px;
+    text-align: center;
+  }
 
 #portafolio {
     background-color: #ecbb00;
     font-weight: bold;
     padding-top: 20px;
     padding-bottom: 15px;
-    margin: 45px 10px 0;
+    margin: 35px 10px 20px;
     border-radius: 100px;
     opacity: 0.8;
+    width: 100%;
+    text-align: center;
 }
 
 #portafolio h4 {
@@ -144,6 +145,8 @@ a:hover{
     text-align: center;
     color: rgb(0, 0, 0);
     font-weight: bold;
+    font-size: 24px; /* Tamaño de fuente inicial */
+    margin: 20px 0;
 }
 
 #main-porta {
@@ -382,24 +385,34 @@ h3{
         object-fit: cover;
     }
 
-    #parrafo {
-        flex-direction: column; 
-        align-items: center;
-    }
-
-    .foto1 {
-        margin-right: 0; 
-        margin-bottom: 20px; 
-    }
-
-    .sobre-nosotros {
-        text-align: center; 
-        margin-left: 0; 
-    }
-
-    .foto1 img {
-        max-height: 600px; 
-    }
+    @media (max-width: 768px) {
+        #parrafo {
+          flex-direction: column;
+          align-items: center;
+          margin: 0 20px;
+        }
+      
+        #parrafo article {
+          padding: 20px;
+          font-size: 150%;
+        }
+      
+        .foto1 {
+          margin-right: 0;
+          margin-bottom: 20px;
+        }
+      
+        .foto1 img {
+          max-width: 100%;
+        }
+      
+        .sobre-nosotros {
+          padding: 15px;
+          h3{
+            font-size: 150%;
+          }
+        }
+      }
 
     @media (max-width: 768px) {
         .main-porta1, .main-porta2, .main-porta3 {
@@ -407,17 +420,19 @@ h3{
         }
     }
     
-    @media (max-width: 480px) {
+    @media (max-width: 768px) {
         #portafolio {
-            margin: 30px 5px; 
+            margin: 30px 5px;
+
         }
     
         .main-porta1, .main-porta2, .main-porta3 {
             padding: 5px; 
+            font-size: 150%;
         }
     
         .main-porta1 h2, .main-porta2 h2, .main-porta3 h2 {
-            font-size: 1.2em;
+            font-size: 150%;
         }
     }
 }
