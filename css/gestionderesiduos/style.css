@@ -28,12 +28,17 @@ header{
     position: sticky;
     top: 0;
     z-index: 1;
-    
-    nav{background-color: rgba(218, 218, 218, 0.9); border-bottom: solid 1.5px black; border-top: solid 1.5px black; box-shadow: 0px 5px 40px black;}
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(218, 218, 218, 0.9);
+    border-bottom: solid 1.5px black;
+    border-top: solid 1.5px black;
+    box-shadow: 0px 5px 40px black;
+
     .nav-gestion{
         display: flex;
         justify-content: space-evenly;
-        align-items: center;
+        align-content: center;
         height: auto;
         
         .flex-img{
@@ -71,6 +76,18 @@ header{
                 li{transition: transform 0.6s;}
                 a{transition: color 0.4s;}
             }
+        }
+    }
+
+    .nav-marquee marquee{
+        background-color: black;
+
+        h1{
+            text-align: center;
+            font-size: 1.2rem;
+            color: white;
+            margin: 0.5% 0 0.3% 0;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         }
     }
 }
@@ -225,6 +242,7 @@ main{
         .serv-img{
             display: flex;
             height: 260px;
+            align-content: center;
             justify-content: space-evenly;
 
             img{
@@ -289,7 +307,7 @@ footer{
                 transition: 0.7s;
                 width: 50%;
                 svg{width: 1.8vw; transition: 0.7s;}
-                h4{margin: 0 0 0 5%; align-content: center; font-size: 1.27rem; transition: 0.7s;}
+                h4{margin: 0 0 0 5%; align-content: center; font-size: 1.25rem; transition: 0.7s;}
             }
         }
     }
@@ -308,7 +326,7 @@ footer{
             color: white;
 
             svg{width: 2.1vw; transition: 0.7s;}
-            h4{margin: 0 0 0 5%; align-content: center; font-size: 1.27rem; transition: 0.7s;}
+            h4{margin: 0 0 0 5%; align-content: center; font-size: 1.25rem; transition: 0.7s;}
         }
     }
 
@@ -361,6 +379,7 @@ footer{
 
 @media(max-width: 1275px){
     .carrusel #carouselExampleSlidesOnly .carousel-item{padding: auto; img{height: 500%;}}
+    .nav-marquee marquee h1{font-size: 1rem;}
 }
 
 @media(max-width: 1150px){
@@ -453,7 +472,7 @@ footer{
 
     footer{
         .redes-h3{h3{font-size: 1.3rem; margin: 0;}}
-        .facebook a, .instagram a, .whatsapp a{svg{width: 2.1vw;}}
+        .facebook a, .instagram a, .tiktok a, .whatsapp a{svg{width: 3vw;}}
         .logo-kimsa{height: 150px;}
         .contacto{h3{font-size: 1.3rem; margin: 0;} h6{font-size: 1.2rem;}}
         .footer-copyright p{font-size: 0.75rem;}
@@ -474,7 +493,7 @@ footer{
     }
 
     footer{
-        .contacto{h3{font-size: 1.4rem;} h6{font-size: 1rem;}}
+        .contacto{h3{font-size: 1.3rem;} h6{font-size: 0.9rem;}}
     }
 }
 
@@ -540,6 +559,8 @@ footer{
 
 @media(max-width: 585px){
     header nav{
+        .nav-marquee marquee{font-size: 0.9rem;}
+
         .nav-gestion{
             .flex-img{flex-grow: 0;}
             .opciones ul{
@@ -552,8 +573,92 @@ footer{
 
     main{
         .sec-historia{
+            padding: 6% 4% 6% 4%;
+
             .titulo-hist{height: 30px; h3{font-size: 1.7rem;}}
-            .parrafo-hist{div{height: 100px;}}
+            .parrafo-hist{margin-bottom: 2.5%; p{margin-bottom: 2.5%;} div{height: 80px; width: auto;}}
+        }
+        
+        .sec-servicios{
+            padding: 2% 4% 4% 4%;
+            gap: 10px;
+            .serv-parrafo{
+                h3{font-size: 1.4rem;}
+                p{font-size: 1rem; margin-bottom: 0;}
+            }
+
+            .serv-img{
+                height: 110px;
+            }
+        }
+    }
+}
+
+@media(max-width: 550px){
+    main{
+        .sec-mision-vision{
+            margin: 5% 7% 5% 7%;
+        }
+    }
+
+    footer{
+        .redes-h3{h3{font-size: 1.1rem; margin: 0;}}
+        .logo-kimsa{height: 138px;}
+        .contacto{h3{font-size: 1.1rem; margin: 0;} h6{font-size: 1rem;}}
+        .footer-copyright p{font-size: 0.65rem;}
+    }
+}
+
+@media(max-width: 450px){
+    header nav{
+        .nav-gestion{
+            .opciones ul{
+                flex-wrap: wrap;
+                justify-content: center;
+                text-align: center;
+                gap: 0px 10px;
+                a{font-size: 0.8rem;}
+            }
+        }
+    }
+
+    main{
+        .sec-quienes-somos{
+            .quienes-somos-img{width: auto;}
+        }
+    }
+}
+
+@media(max-width: 400px){
+    header nav{
+        .flex-img{flex-grow: 0; img{width: 8vw;}}
+    }
+
+    footer{
+        .footer-contactos{flex-direction: column; flex-wrap: wrap; padding: 2% 5% 2% 5%;}
+        .logo-kimsa{height: 120px;}
+    }
+}
+
+@media(max-width: 375px){
+    main{
+        .sec-historia{
+            .parrafo-hist{div{height: 65px;}}
+        }
+
+        .sec-quienes-somos{
+            .quienes-somos-img{height: 200px;}
+        }
+
+        .sec-servicios{
+            padding: 6% 4% 6% 4%;
+            flex-wrap: wrap;
+
+            .serv-img{
+                flex-direction: column;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
         }
     }
 }
