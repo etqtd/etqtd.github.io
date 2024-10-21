@@ -19,7 +19,7 @@
 .carousel-inner img {
     width: 100%;
     height: auto; 
-    max-height: 80vh; 
+    max-height: 80vh; /* Ajuste según lo que necesites */
     object-fit: cover; 
     object-position: center; 
 }
@@ -34,7 +34,7 @@
 }
 
 .header-content h1 {
-    font-size: 8vw; 
+    font-size: 6vw; /* Tamaño base responsivo */
     margin-bottom: 20px;
     color: rgba(255, 255, 255, 0.9);
     text-transform: uppercase;
@@ -50,7 +50,7 @@
 }
 
 .header-content p {
-    font-size: 4vw; 
+    font-size: 4vw; /* Tamaño base responsivo */
     color: #c5c5c5;
     margin-bottom: 25px;
 }
@@ -67,13 +67,31 @@
     text-transform: uppercase;
     font-weight: bold;
     border-radius: 5px;
+    font-size: 3vw; /* Tamaño base responsivo */
 }
 
 .btn-1:hover {
     background-color: #ebad8d;
 }
 
-@media (max-width: 830px) {
+/* Estilos para dispositivos más grandes */
+@media (min-width: 831px) {
+    .header-content h1 {
+        font-size: 4rem; /* Tamaño fijo para pantallas grandes */
+    }
+
+    .header-content p {
+        font-size: 2rem; /* Tamaño fijo para pantallas grandes */
+    }
+
+    .btn-1 {
+        font-size: 1.5rem; /* Tamaño fijo para pantallas grandes */
+        padding: 1rem 2rem; /* Tamaño fijo para pantallas grandes */
+    }
+}
+
+/* Estilos para dispositivos de tamaño mediano */
+@media (max-width: 830px) and (min-width: 481px) {
     .header-content h1 {
         font-size: 6vw; 
     }
@@ -81,8 +99,14 @@
     .header-content p {
         font-size: 5vw; 
     }
+
+    .btn-1 {
+        font-size: 4vw; /* Tamaño responsivo */
+        padding: 3vw 6vw; /* Tamaño responsivo */
+    }
 }
 
+/* Estilos para dispositivos pequeños */
 @media (max-width: 480px) {
     .header-content h1 {
         font-size: 8vw; 
@@ -90,6 +114,11 @@
 
     .header-content p {
         font-size: 6vw; 
+    }
+
+    .btn-1 {
+        font-size: 5vw; /* Tamaño responsivo */
+        padding: 4vw 7vw; /* Tamaño responsivo */
     }
 }
 
@@ -197,18 +226,19 @@
     transform: translateY(-3px);
 }
 
+/* Estilos para dispositivos de tamaño mediano */
 @media (max-width: 830px) {
     .txt-p {
         padding: 0 5vw; 
-        font-size: 70px; 
+        font-size: 6vw; /* Cambié de 70px a 6vw */
     }
 
     .coffee-content h2 {
-        font-size: 80px; 
+        font-size: 7vw; /* Cambié de 80px a 7vw */
     }
 
     .coffee-content p {
-        font-size: 70px; 
+        font-size: 5vw; /* Cambié de 70px a 5vw */
         text-align: justify;
     }
 
@@ -222,36 +252,36 @@
     }
 
     .coffee-1 h4 {
-        font-size: 80px; 
+        font-size: 6vw; /* Cambié de 80px a 6vw */
     }
 
     .coffee-1 .parrafos {
-        font-size: 70px; 
+        font-size: 5vw; /* Cambié de 70px a 5vw */
         text-align: justify;
     }
 }
 
-
+/* Estilos para dispositivos pequeños */
 @media (max-width: 480px) {
     .txt-p {
         padding: 0 3vw;
-        font-size: 40px; 
+        font-size: 8vw; /* Cambié de 40px a 8vw */
     }
 
     .coffee-content h2 {
-        font-size: 50px;
+        font-size: 6vw; /* Cambié de 50px a 6vw */
     }
 
     .coffee-content p {
-        font-size: 40px;
+        font-size: 4vw; /* Cambié de 40px a 4vw */
     }
 
     .coffee-1 h4 {
-        font-size: 50px;
+        font-size: 5vw; /* Cambié de 50px a 5vw */
     }
 
     .coffee-1 .parrafos {
-        font-size: 50px;
+        font-size: 4vw; /* Cambié de 50px a 4vw */
     }
 }
 
@@ -330,24 +360,26 @@
     margin-bottom: 50px;
 }
 
+/* Estilos para dispositivos de tamaño mediano */
 @media (max-width: 830px) {
     .services h2 {
-        font-size: 6vw; 
+        font-size: 6vw; /* Tamaño responsivo */
     }
 
     .services p {
-        font-size: 4vw; 
+        font-size: 4vw; /* Tamaño responsivo */
         text-align: justify;
     }
 }
 
+/* Estilos para dispositivos pequeños */
 @media (max-width: 480px) {
     .services h2 {
-        font-size: 50px; 
+        font-size: 8vw; /* Cambiado a una unidad responsiva */
     }
 
     .services p {
-        font-size: 40px; 
+        font-size: 6vw; /* Cambiado a una unidad responsiva */
         text-align: justify;
     }
 }
@@ -435,48 +467,50 @@
     opacity: 1;
 }
 
+/* Estilos para dispositivos de tamaño mediano */
 @media (max-width: 830px) {
     .general {
-        flex-direction: column;
+        flex-direction: column; /* Cambia la dirección del flex a columna */
     }
 
     .general-1,
     .general-2,
     .general-3 {
-        width: 100%;
-        margin-bottom: 30px;
+        width: 100%; /* Asegura que cada sección ocupe el 100% del ancho */
+        margin-bottom: 30px; /* Espaciado entre secciones */
     }
 
     .general-1 {
-        padding: 40px 20px;
+        padding: 4vw 2vw; /* Uso de unidades relativas para padding */
     }
 
     .general-1 h2 {
-        font-size: 6vw; 
+        font-size: 6vw; /* Tamaño responsivo */
     }
 
     .general-1 p {
-        font-size: 4.5vw; 
-        text-align: justify;
+        font-size: 4.5vw; /* Tamaño responsivo */
+        text-align: justify; /* Alineación justificada */
     }
 
     .general-2,
     .general-3 {
-        min-height: 40vh; 
+        min-height: 40vh; /* Altura mínima para mantener el diseño */
     }
 }
 
+/* Estilos para dispositivos pequeños */
 @media (max-width: 480px) {
     .general-1 h2 {
-        font-size: 50px; 
+        font-size: 8vw; /* Cambiado a unidad responsiva */
     }
 
     .general-1 p {
-        font-size: 40px; 
+        font-size: 6vw; /* Cambiado a unidad responsiva */
     }
 
     .text-overlay {
-        font-size: 35px; 
+        font-size: 5vw; /* Cambiado a unidad responsiva */
     }
 }
 
@@ -548,44 +582,47 @@
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
+/* Estilos para dispositivos de tamaño mediano */
 @media (max-width: 830px) {
     .blog .blogxd {
-        font-size: 6.5vw; 
+        font-size: 6.5vw; /* Tamaño responsivo */
     }
 
     .blog-content {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: column; /* Cambia la dirección del flex a columna */
+        align-items: center; /* Centra los elementos */
     }
 
     .blog-1 {
-        width: 100%;
-        margin-bottom: 20px;
+        width: 100%; /* Asegura que cada bloque ocupe el 100% del ancho */
+        margin-bottom: 20px; /* Espaciado entre bloques */
     }
 
     .blog-1 h3 {
-        font-size: 6vw; 
+        font-size: 6vw; /* Tamaño responsivo */
     }
 
     .blog-1 p {
-        font-size: 4.5vw; 
-        text-align: justify;
+        font-size: 4.5vw; /* Tamaño responsivo */
+        text-align: justify; /* Alineación justificada */
     }
 }
 
+/* Estilos para dispositivos pequeños */
 @media (max-width: 480px) {
     .blog .blogxd {
-        font-size: 60px; 
+        font-size: 8vw; /* Cambiado a unidad responsiva */
     }
 
     .blog-1 h3 {
-        font-size: 50px; 
+        font-size: 6vw; /* Cambiado a unidad responsiva */
     }
 
     .blog-1 p {
-        font-size: 40px; 
+        font-size: 5vw; /* Cambiado a unidad responsiva */
     }
 }
+
 
 .video {
     margin: 20px auto;
@@ -640,9 +677,6 @@
     background-color: #555; 
     transform: scale(1.03); 
 }
-
-
-
 
 .footer {
     padding: 60px 0;
@@ -711,66 +745,66 @@ footer svg:hover {
     fill: #fff;
 }
 
+/* Estilos para dispositivos de tamaño mediano */
 @media (max-width: 991px) {
     .footer {
-        padding: 4vw 2vw; 
+        padding: 4vw 2vw; /* Espaciado responsivo */
     }
 
     .footer-content {
-        flex-direction: column;
-        text-align: center;
+        flex-direction: column; /* Cambia la dirección del flex a columna */
+        text-align: center; /* Alineación centrada */
     }
 
     .link {
-        align-items: center;
-        text-align: center;
-        padding: 2vw 0;
-        max-width: 100%;
+        align-items: center; /* Alinea los elementos al centro */
+        text-align: center; /* Alineación centrada */
+        padding: 2vw 0; /* Espaciado vertical */
+        max-width: 100%; /* Asegura que ocupe todo el ancho */
     }
 
     .link h3 {
-        border-bottom: none;
-        margin-bottom: 1vw;
-        font-size: 6vw; 
+        border-bottom: none; /* Elimina el borde */
+        margin-bottom: 1vw; /* Espaciado inferior */
+        font-size: 6vw; /* Tamaño responsivo */
     }
 
     .link a {
-        font-size: 4.5vw; 
-        text-align: justify;
+        font-size: 4.5vw; /* Tamaño responsivo */
+        text-align: justify; /* Alineación justificada */
     }
 
     footer svg {
-        margin-top: 2vw;
-        width: 9vw; 
+        margin-top: 2vw; /* Espaciado superior */
+        width: 9vw; /* Tamaño responsivo */
     }
 }
 
+/* Estilos para dispositivos pequeños */
 @media (max-width: 576px) {
     .footer {
-        padding: 5vw 3vw; 
+        padding: 5vw 3vw; /* Espaciado responsivo */
     }
 
     .link {
-        padding: 2vw 0;
-        font-size: 30px;
+        padding: 2vw 0; /* Espaciado vertical */
+        font-size: 4vw; /* Cambiado a unidad responsiva */
     }
 
     .link h3 {
-        font-size:50px; 
+        font-size: 6vw; /* Cambiado a unidad responsiva */
     }
 
     .link a {
-        font-size: 30px; 
-        text-align: justify;
+        font-size: 5vw; /* Cambiado a unidad responsiva */
+        text-align: justify; /* Alineación justificada */
     }
 
     .link i {
-        font-size: 30px; 
+        font-size: 5vw; /* Cambiado a unidad responsiva */
     }
 
     .link ul li svg {
-        width: 10vw; 
+        width: 10vw; /* Tamaño responsivo */
     }
 }
-
-
