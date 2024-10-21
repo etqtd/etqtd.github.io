@@ -12,6 +12,8 @@
     font-style: normal;
 }
 
+html{scroll-behavior: smooth;}
+
 body{
     background-image: url(/assets/img/gestionderesiduos/img1.jpeg);
     background-position: center center;
@@ -83,7 +85,7 @@ header{
         background-color: black;
 
         h1{
-            text-align: center;
+            text-align: left;
             font-size: 1.2rem;
             color: white;
             margin: 0.5% 0 0.3% 0;
@@ -359,7 +361,7 @@ footer{
 .instagram a:hover{svg{transform: rotate(360deg) scale(1.2);} h4{transform: translateX(10px);}}
 .tiktok a:hover{svg{transform: rotate(360deg) scale(1.2);} h4{transform: translateX(10px);}}
 .whatsapp a:hover{svg{transform: rotate(360deg) scale(1.2);} h4{transform: translateX(10px);}}
-.logo-kimsa img:hover{border-radius: 10px;}
+.logo-kimsa img:hover{border-radius: 25px;}
 .sec-servicios:hover{h3,p{transform: scale(1.05)};}
 .serv-img img:hover{transform: rotate(10deg) scale(1.06);}
 
@@ -503,6 +505,7 @@ footer{
             flex-direction: column;
             .flex-img{flex-grow: 0; img{width: 6vw;}}
             .opciones ul{
+                justify-content: center;
                 gap: 15px;
                 padding-left: 0px;
                 a{font-size: 1.1rem;}
@@ -614,7 +617,6 @@ footer{
         .nav-gestion{
             .opciones ul{
                 flex-wrap: wrap;
-                justify-content: center;
                 text-align: center;
                 gap: 0px 10px;
                 a{font-size: 0.8rem;}
