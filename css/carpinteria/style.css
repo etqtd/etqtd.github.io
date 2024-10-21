@@ -165,11 +165,13 @@ a:hover{
     background-color: #000000ab; 
     flex: 1; 
     min-width: 300px; 
-    max-width: 30%; 
+    max-width: 30%;
+    text-align: justify; 
 }
 
 .main-porta1 h2, .main-porta2 h2, .main-porta3 h2 {
     color: #fcfcfc;
+    text-align: center;
 }
 
 .main-porta1 p, .main-porta2 p, .main-porta3 p {
