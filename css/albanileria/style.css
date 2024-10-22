@@ -153,6 +153,8 @@ footer{
             display: flex;
             margin: 0;
             padding: 0;
+            justify-content: center;
+
             li{
                 list-style-type: none;
                 margin: 0;
@@ -418,7 +420,7 @@ body{
     footer{
         section{
             ul{
-                display: flex;
+                display:flex;
                 flex-direction: column;
             }
         }
