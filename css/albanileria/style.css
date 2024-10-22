@@ -31,7 +31,7 @@ header{
             padding: 0;
             margin-top: 2%;
             li{
-                padding: 2vh;
+                padding: 10px;
                 list-style-type: none;
                 font-weight: bold;
                 a{
@@ -39,7 +39,7 @@ header{
                     color: white;
                     text-decoration: none;
                     transition: all 0.5s;
-                    padding: 1vh;
+                    padding: 1px;
                     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
                     i{
                         padding: 5px;
@@ -153,8 +153,6 @@ footer{
             display: flex;
             margin: 0;
             padding: 0;
-            justify-content: center;
-
             li{
                 list-style-type: none;
                 margin: 0;
@@ -417,11 +415,10 @@ body{
             }
         }
     }
-    
     footer{
         section{
             ul{
-                display:flex;
+                display: flex;
                 flex-direction: column;
             }
         }
