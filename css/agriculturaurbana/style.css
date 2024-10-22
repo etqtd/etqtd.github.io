@@ -13,6 +13,7 @@ header {
     padding: 10px 35px 10px 35px ;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
     font-family: serif;
     font-size: 25px;
@@ -35,6 +36,7 @@ header .logo img {
 
 nav {
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
 }
 
@@ -163,6 +165,7 @@ footer {
     text-align: center;
     padding: 20px;
     margin-top: 20px;
+    flex-grow: 1;
     
     font-family: serif;
   
@@ -170,6 +173,8 @@ footer {
     
     ul{
         display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
         gap: 0px 30px;
         
         li, a{
@@ -192,6 +197,7 @@ footer {
 
 
 @media(max-width: 800px){
+    header{justify-content: center;}
     .intro{
         flex-direction: column;
         flex-wrap: wrap;
@@ -202,7 +208,9 @@ footer {
 @media (max-width: 600px) {
     header {
         flex-direction: column;
-        align-items: flex-start; 
+        align-items: flex-start;
+        justify-content: center;
+        justify-items: center;
     }
     nav {
         margin-top: 10px;
@@ -214,5 +222,14 @@ footer {
 
     }
 
+}
+@media (max-width: 600px) {
+    .encabezado{
+        flex-direction: column;
+        align-items: flex-start; 
+        ul{
+            flex-wrap: wrap;
+        }
+    }
 }
 
