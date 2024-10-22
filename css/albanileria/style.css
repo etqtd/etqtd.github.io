@@ -419,13 +419,13 @@ body{
         section{
             ul{
                 display: flex;
-                flex-direction: column;
+                flex-direction: column; 
             }
         }
     }
 }
 @media (max-width:550px){
-    
+
     .main-article{
         section{
             h2{
