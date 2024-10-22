@@ -31,7 +31,7 @@ header{
             padding: 0;
             margin-top: 2%;
             li{
-                padding: 2vh;
+                padding: 10px;
                 list-style-type: none;
                 font-weight: bold;
                 a{
@@ -39,7 +39,7 @@ header{
                     color: white;
                     text-decoration: none;
                     transition: all 0.5s;
-                    padding: 1vh;
+                    padding: 1px;
                     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
                     i{
                         padding: 5px;
@@ -142,37 +142,6 @@ header{
 footer{
     background-color: black;
     color: white;
-    section{
-        padding: 2%;
-        h2{
-            font-size: 2rem;
-            margin: 0;
-            padding: 1%;
-        }
-        ul{
-            display: flex;
-            margin: 0;
-            padding: 0;
-            li{
-                list-style-type: none;
-                margin: 0;
-                padding: 1%;
-                a{
-                    display: flex;
-                    color: white;
-                    text-decoration: none;
-                    transition: all 0.5s;
-                    padding: 1vh;
-                    border-radius: 10px;
-                }
-                a:hover{
-                    background-color: white;
-                    font-weight: bolder;
-                    color: black;
-                }
-            }
-        }
-    }
     .derechos{
         position: sticky;
         top: 0.1px;
@@ -415,17 +384,9 @@ body{
             }
         }
     }
-    footer{
-        section{
-            ul{
-                display: flex;
-                flex-direction: column; 
-            }
-        }
-    }
 }
 @media (max-width:550px){
-
+    
     .main-article{
         section{
             h2{
