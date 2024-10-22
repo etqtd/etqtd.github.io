@@ -43,13 +43,76 @@ main img {
 
 header {
 
-    height: 400px;
+    height: 520px;
     background: #7F7FD5;  
     background: -webkit-linear-gradient(to right, #91EAE4, hsla(219, 67%, 72%, 0.726), hsla(240, 51%, 67%, 0.671)), url(/assets/img/Pedagogia/imgfondo.jpeg); 
     background: linear-gradient(to right, #91EAE4, hsla(219, 67%, 72%, 0.726), hsla(240, 51%, 67%, 0.671)), url(/assets/img/Pedagogia/imgfondo.jpeg); 
     background-size: cover;
     background-attachment: fixed;
     position: relative;
+    .inicio ul {
+        list-style: none;
+        padding-left: 10px;
+        margin: 0;
+    }
+    
+    .inicio ul li {
+        margin-bottom: 10px;
+    }
+    
+    .inicio a {
+        text-decoration: none;
+        font-size: 1.2rem; /* Escalado relativo para mejor responsividad */
+        color: white;
+        padding: 8px 15px;
+        display: inline-flex; /* Para que el SVG esté alineado con el texto */
+        align-items: center;
+        gap: 10px; /* Espacio entre el icono y el texto */
+        transition: background-color 0.3s, color 0.3s, transform 0.3s;
+        border-radius: 5px;
+    }
+    
+    .inicio a:hover {
+        color: #8a8a8a;
+        background-color: #ffffff;
+        transform: translateY(-3px); /* Efecto de flotación al hacer hover */
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para dar más énfasis */
+    }
+    
+    .inicio svg {
+        width: 25px;
+        height: auto; /* Mantiene las proporciones del SVG */
+        color: white;
+        transition: color 0.3s ease;
+    }
+    
+    .inicio a:hover svg {
+        color: #8a8a8a; /* Cambia el color del icono al hacer hover */
+    }
+    
+    @media (max-width: 768px) {
+        .inicio a {
+            font-size: 1rem;
+            padding: 8px 10px;
+        }
+        
+        .inicio svg {
+            width: 20px;
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .inicio a {
+            font-size: 0.9rem;
+            padding: 6px 8px;
+        }
+    
+        .inicio svg {
+            width: 18px;
+        }
+    }
+    
 }
 
 header .textos-header {
@@ -284,6 +347,84 @@ footer {
     text-decoration: none;
 }
 
+.footerTareas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 30px 0;
+    color: #f3f3f3;
+}
+
+
+.oficios{
+    color: #fff;
+    text-align: center;
+
+}
+
+
+.footerTareas ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px 40px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.footerTareas li {
+    transition: transform 0.3s ease;
+}
+
+.footerTareas li:hover {
+    transform: translateY(-5px);
+}
+
+.footerTareas a {
+    text-decoration: none;
+    color: #f3f3f3;
+    font-size: 1rem;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+    padding-bottom: 5px;
+}
+
+.footerTareas a:hover {
+    color: #af20d3;
+    border-bottom: 3px solid #af20d3;
+}
+
+@media (max-width: 768px) {
+    .footerTareas {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .footerTareas ul {
+        gap: 20px;
+    }
+
+    .footerTareas a {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .footerTareas {
+        padding: 15px;
+    }
+
+    .footerTareas a {
+        font-size: 0.8rem;
+    }
+}
+
+
+
 .titulo-final {
     text-align: center;
     font-size: 24px;
@@ -330,14 +471,16 @@ footer {
     }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 820px) {
     header .textos-header h1 {
         font-size: 8vw;
     }
 
     header .textos-header h2 {
         font-size: 5vw;
+        margin-bottom: 0
     }
+    
 
     .imagen-port {
         width: 100%;
