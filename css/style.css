@@ -4,8 +4,9 @@
     padding: 0;
 }
 
+/*Inicio de Header*/
+
 header{
-    background-color: rgb(54, 138, 212);
     padding: 30px 0 30px 0;
 }
 
@@ -16,73 +17,34 @@ nav ul{
 
 nav a{
     text-decoration: none;
-    font-size: 2vw;
+    font-size: 1vw;
     color: black;
     font-family: Arial, Helvetica, sans-serif;
-    transition: color 0.5s ease;
+    transition: color 0.3s;
 }
 
 nav a:hover{
- color:rgb(255, 255, 255);
- background-color: rgb(0, 106, 198);
+    color: #0170B9;
+    line-height: normal ;
 }
 
 nav li{
-    transition: all 0.5s ease;
-}
 
-nav li:hover{
-    color: rgb(106, 3, 3);
-    transform: scale(1.9);
-}
-
-
-/***FIN DE ESTILO DEL HEADER****/
-
-.flex-info-item{
-    transition: all 0.5s;
-}
-
-.flex-info-item:hover{
-    transform: scale(1.5);
-}
-
-nav li{
     list-style-type: none;
-}
+    width: 10%;
+    text-align: center;
+    transition: all 0.5;
+    border-bottom: 3px solid transparent;
+    transition: all 0.9s ease-out;
 
+}
+nav li:hover{
+  
+   border-bottom: 3px solid #0170B9;
+}
 body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 
 }
-
-main{
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-}
-
-.flex-info{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    background-color: blue;
-}
-
-.flex-info-item{
-    width: 10%;
-}
-
-.flex-info2{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    background-color: rgb(102, 102, 224);
-}
-
-.flex-info-item2{
-    width: 10%;
-}
-
