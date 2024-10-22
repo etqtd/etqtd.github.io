@@ -158,6 +158,39 @@ footer {
     font-size: 20px;
 }
 
+.encabezado {
+    display: flex;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    
+    font-family: serif;
+  
+    
+    
+    ul{
+        display: flex;
+        gap: 0px 30px;
+        
+        li, a{
+            text-align: center;
+            text-decoration: none;
+            color: white;
+            transition:  0.3s;
+            font-size: 20PX;
+        
+        }
+    }
+
+    ul li a:hover{
+        background: white;
+        color: black;
+    }
+}
+
+
+
+
 @media(max-width: 800px){
     .intro{
         flex-direction: column;
