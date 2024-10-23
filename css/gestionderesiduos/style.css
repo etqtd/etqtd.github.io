@@ -1,0 +1,731 @@
+*,*::after,*::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'harvest';
+}
+
+@font-face {
+    font-family: 'harvest';
+    src: url(/assets/font/gestionderesiduos/Harvest.otf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html{scroll-behavior: smooth;}
+
+body{
+    background-image: url(/assets/img/gestionderesiduos/img1.jpeg);
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: auto;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(218, 218, 218, 0.9);
+    border-bottom: solid 1.5px black;
+    border-top: solid 1.5px black;
+    box-shadow: 0px 5px 40px black;
+
+    .nav-gestion{
+        display: flex;
+        flex-grow: 1;
+        align-items: center;
+        height: 70px;
+        width: auto;
+            
+            .flex-img{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-grow: 1;
+                
+                img{
+                    text-align: center;
+                    height: 50px;
+                    border-radius: 10% 30%;
+                    border: 3px groove rgba(54, 217, 0, 0.85);
+                    transition: all 0.7s;
+                    margin: 2%;
+                }
+            }
+        
+        .opciones {
+            display: flex;
+            align-content: center;
+            flex-grow: 1;
+            
+            ul{
+                align-items: center;
+                gap: 30px;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                
+                li, a{
+                    list-style-type: none;
+                    text-decoration: none;
+                    color: black;
+                    font-size: 20px;
+                }
+                li{transition: transform 0.6s;}
+                a{transition: color 0.4s;}
+            }
+        }
+    }
+
+    .nav-marquee marquee{
+        background-color: black;
+
+        h1{
+            text-align: left;
+            font-size: 1.2rem;
+            color: white;
+            margin: 0.5% 0 0.3% 0;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+    }
+}
+
+main{
+    flex-grow: 1;
+    justify-content: space-evenly;
+
+    .carrusel{
+        justify-content: space-between;
+        background-color: rgba(146, 255, 37, 0.85);
+        border-bottom: groove 3.5px rgb(108, 18, 18);
+        border-radius: 0% 0% 25% 25% / 0% 0% 5% 5%;
+        box-shadow: 0px 15px 35px black;
+
+        #carouselExampleSlidesOnly{
+            
+            .carousel-item{padding: 1% 20% 1% 20%;}
+            img{
+                height: 550px;
+                width: auto;
+                border-radius: 40px;
+            }
+        }
+    }
+
+    .sec-mision-vision{
+        background-color: rgba(214, 214, 214, 0.9);
+        display: flex;
+        margin: 10% 11% 5% 11%;
+        text-align: center;
+        border: 4px groove green;
+        border-radius: 70px 0px;
+        box-shadow: 15px 15px 30px black;
+        transition: 0.9s;
+        height: 350px;
+
+        h3{font-size: 4rem; padding-top: 20px;}
+        p{text-align: justify; font-size: 1.45rem; padding: 0 20px 0 20px;}
+
+        .mis-vis-img{
+            img{
+                height: 100%;
+                width: auto;
+                border-right: groove 3.5px brown;
+                border-left: groove 3.5px brown;
+                border-radius: 0% 30%;
+            }
+        }
+    }
+
+    .sec-quienes-somos{
+        display: flex;
+        margin: 5% 0% 5% 0%;
+        align-items: center;
+        
+        .quienes-parrafo{
+            background-color: rgba(214, 214, 214, 0.9);
+            margin-right: 7%;
+            justify-content: baseline;
+            border-radius: 40% 10% 180% 0% / 5% 100% 25% 0%;
+            box-shadow: 10px 10px 30px black;
+            border: 3px groove green;
+            border-left: 0px;
+            transition: 0.7s;
+
+            h3,p{margin: 2rem 2.5rem 1.8rem 2rem;}
+            p{font-size: 1.5rem;}
+            h3{font-size: 3rem;}
+        }
+        
+        .quienes-somos-img{
+            margin-right: 5%;
+            height: 320px;
+            width: 450px;
+            
+            img{
+                height: 100%;
+                width: auto;
+                border-radius: 15% 70% 15% 70% / 70% 15% 70% 15%;
+                filter: drop-shadow(10px 10px 10px black);
+                border: 3.5px groove rgb(69, 65, 65);
+                transition: transform 1s;
+            }
+        }
+    }
+
+    .sec-historia{
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(214, 214, 214, 0.9);
+        margin: 5% 10% 5% 10%;
+        padding: 2% 3.5% 2% 3.5%;
+        border-radius: 8% 90% 8% 90% / 90% 8% 90% 8%;
+        border: 4px groove black;
+        box-shadow: 15px 15px 30px black;
+        transition: 0.8s;
+
+        .titulo-hist{
+            display: inline-flex;
+            justify-content: center;
+            height: 45px;
+
+            img{
+                height: 100%;
+                width: auto;
+                margin-left: 2%;
+                border-radius: 10% 30%;
+                border: 3px groove rgba(54, 217, 0, 0.85);
+            }
+
+            h3{
+                margin: 0;
+                font-size: 2.5rem;
+            }
+        }
+
+        .parrafo-hist{
+            margin-top: 3%;
+            text-align: center;
+
+            div{height: 215px;}
+            img{
+                height: 100%;
+                width: auto;
+                border-radius: 7% 22% 7% 22%;
+                border: 2px groove brown;
+            }
+
+            p{
+                font-size: 1.25rem;
+            }
+        }
+    }
+
+    .sec-servicios{
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(214, 214, 214, 0.9);
+        text-align: center;
+        padding: 2% 4% 2% 4%;
+        margin: 5% 0 10% 0;
+        border-radius: 100% 0 / 5% 0;
+        border-top: 4px groove green;
+        border-bottom: 4px groove green;
+        box-shadow: 15px 20px 40px black;
+        gap: 20px 0;
+
+        h3{font-size: 2.3rem; transition: 0.4s;}
+        p{font-size: 1.3rem; transition: 0.4s;}
+
+        .serv-img{
+            display: flex;
+            height: 260px;
+            align-content: center;
+            justify-content: space-evenly;
+
+            img{
+                height: 100%;
+                width: auto;
+                mix-blend-mode: darken
+            }
+        }
+    }
+}
+
+footer{
+    background-color: rgba(0, 67, 238, 0.979);
+    display: flex;
+    flex-direction: column;
+    border-radius: 90% 90% 0 0 / 12% 12% 0 0;
+    border-top: 3px groove white;
+    box-shadow: 1px -15px 25px black;
+
+    .footer-contactos{
+        display: flex;
+        justify-content: space-around;
+        color: white;
+        flex-grow: 1;
+        padding: 2.5% 0 0 0;
+        justify-content: baseline;
+    }
+
+    .redes-sociales{
+        display: flex;
+        flex-direction: column;
+        gap: 10px 0px;
+
+        .redes ul{
+            display: flex;
+            flex-direction: column;
+            gap: 25px 0px;
+            margin: 0;
+            padding: 0;
+
+            li, a{
+                list-style-type: none;
+                text-decoration: none;
+                color: white;
+            }
+
+            .facebook a{
+                display: flex;
+                transition: 0.7s;
+                width: 60%;
+                svg{width: 2.1vw; transition: 0.7s;}
+                h4{margin: 0 0 0 5%; align-content: center; font-size: 1.25rem; transition: 0.7s;}
+            }
+
+            .instagram a{
+                display: flex;
+                transition: 0.7s;
+                width: 66%;
+                svg{width: 2.1vw; transition: 0.7s;}
+                h4{margin: 0 0 0 5%; align-content: center; font-size: 1.25rem; transition: 0.7s;}
+            }
+
+            .tiktok a{
+                display: flex;
+                transition: 0.7s;
+                width: 50%;
+                svg{width: 1.8vw; transition: 0.7s;}
+                h4{margin: 0 0 0 5%; align-content: center; font-size: 1.25rem; transition: 0.7s;}
+            }
+        }
+    }
+
+    .oficios{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px 0px;
+        background-color: black;
+        padding-inline: 4%;
+        padding-block: 2%;
+        border-radius: 45% 45% 0 0 / 55% 55% 0 0;
+
+        div{display: flex; gap: 0px 40px;}
+        .lista-oficio1, .lista-oficio2{flex-grow: 1;}
+        ul{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            gap: 15px 0px;
+            margin: 0;
+            padding: 0;
+            flex-grow: 1;
+        }
+
+        li, a{
+            list-style-type: none;
+            text-decoration: none;
+            text-align: center;
+            color: white;
+            font-size: 1.15rem;
+            transition: 0.4s;
+            flex-grow: 1;
+        }
+    }
+
+    .sec-contactos{
+        display: flex;
+        flex-direction: column;
+        text-align: end;
+        gap: 10px 0px;
+
+        .contacto{h6{font-size: 1.40rem;}}
+        .whatsapp{
+            justify-content: end;
+            display: flex;
+            margin: 0;
+            padding: 0;
+            gap: 10px;
+            text-decoration: none;
+            color: white;
+            svg{width: 2.1vw; transition: 0.7s;}
+            h4{margin: 0 0 0 5%; align-content: center; font-size: 1.45rem; transition: 0.7s;}
+        }
+    }
+
+    .footer-copyright{
+        background-color: black;
+        padding: 0.8% 0 0.8% 0;
+
+        p{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: white;
+            text-align: center;
+            margin: 0;
+        }
+    }
+}
+
+.inicio a:hover{img{transform: rotate(355deg) scale(1.1);}}
+.flex-img a img:hover{transform: rotate(360deg) scale(1.3);}
+.opciones ul li:hover{transform: scale(1.2); a{color: brown;}}
+.sec-mision-vision:hover{transform: scale(1.08);}
+.quienes-parrafo:hover{transform:scale(1.04);}
+.quienes-somos-img img:hover{transform: rotate(360deg) scale(1.1);}
+.sec-historia:hover{transform: scale(1.12);}
+.facebook a:hover{svg{transform: rotate(360deg) scale(1.2);} h4{transform: translateX(10px);}}
+.instagram a:hover{svg{transform: rotate(360deg) scale(1.2);} h4{transform: translateX(10px);}}
+.tiktok a:hover{svg{transform: rotate(360deg) scale(1.2);} h4{transform: translateX(10px);}}
+.whatsapp a:hover{svg{transform: rotate(360deg) scale(1.2);} h4{transform: translateX(-10px);}}
+.logo-kimsa img:hover{border-radius: 25px;}
+.sec-servicios:hover{h3,p{transform: scale(1.05)};}
+.serv-img img:hover{transform: rotate(10deg) scale(1.06);}
+.lista-oficio1 li:hover{transform: scale(1.3);}
+.lista-oficio2 li:hover{transform: scale(1.3);}
+
+@media(max-width: 1305px){
+    main{
+        .sec-mision-vision{
+            .mision, .vision{h3{font-size: 3.5rem};}
+            .mision, .vision{p{font-size: 1.4rem};}
+        }
+
+        .sec-quienes-somos .quienes-parrafo{
+            h3{font-size: 2.7rem;}
+            p{font-size: 1.2rem;}
+        }
+    }
+}
+
+@media(max-width: 1275px){
+    .carrusel #carouselExampleSlidesOnly .carousel-item{padding: auto; img{height: 500%;}}
+    .nav-marquee marquee h1{font-size: 1rem;}
+}
+
+@media(max-width: 1150px){
+    main{
+        .sec-mision-vision{
+            .mision, .vision{h3{font-size: 3.2rem};}
+            .mision, .vision{p{font-size: 1.2rem};}
+        }
+    }
+}
+
+@media(max-width: 1030px){
+    main{
+        .sec-mision-vision{
+            height: 320px;
+            margin: 7% 9% 3% 9%;
+
+            .mision, .vision{h3{font-size: 3rem} p{font-size: 1.1rem};}
+        }
+
+        .sec-quienes-somos{
+            margin: 3% 0% 3% 0%;
+
+            .quienes-parrafo{
+                h3{font-size: 2.2rem;}
+                p{font-size: 1.1rem;}
+            }
+
+            .quienes-somos-img{height: 270px;}
+        }
+
+        .sec-historia{
+            margin: 3% 8.5% 3% 8.5%;
+
+            .titulo-hist{height: 39px; h3{font-size: 2.15rem;}}
+            .parrafo-hist{div{height: 180px;} p{font-size: 1.1rem;}}
+        }
+
+        .sec-servicios{
+            margin: 2% 0 8% 0;
+
+            .serv-parrafo{h3{font-size: 1.95rem;} p{font-size: 1.2rem;}}
+            .serv-img{height: 230px;}
+        }
+
+    }
+    
+    footer{
+        .redes-h3{h3{font-size: 1.4rem;}}
+        .facebook a, .instagram a, .tiktok a, .whatsapp a{h4{font-size: 1rem;}}
+        .logo-kimsa{height: 165px;}
+        .contacto{h3{font-size: 1.4rem;} h6{font-size: 1.2rem;}}
+        .footer-copyright p{font-size: 0.75rem;}
+    }
+}
+
+@media(max-width: 905px){
+    header nav{
+        .nav-gestion{
+            .opciones ul{
+                gap: 15px;
+                a{font-size: 1.1rem;}
+            }
+        }
+    }
+
+    main{
+        .sec-mision-vision{
+            height: 300px;
+            .mision, .vision{h3{font-size: 2.7rem} p{font-size: 1.07rem};}
+        }
+
+        .sec-quienes-somos{
+            .quienes-parrafo{margin-right: 5%; h3,p{margin: 1rem 1.7rem 1rem 1.5rem;} h3{font-size: 1.6rem;}}
+            .quienes-somos-img{height: 235px;}
+        }
+
+        .sec-historia{
+            .titulo-hist{height: 33px; h3{font-size: 2rem;}}
+            .parrafo-hist{div{height: 140px;} p{font-size: 1rem;}}
+        }
+
+        .sec-servicios{
+            .serv-parrafo{h3{font-size: 1.7rem;} p{font-size: 1rem;}}
+            .serv-img{height: 180px;}
+        }
+    }
+
+    footer{
+        .redes-h3{h3{font-size: 1.3rem; margin: 0;}}
+        .facebook a, .instagram a, .tiktok a, .whatsapp a{svg{width: 3vw;}}
+        .logo-kimsa{height: 150px;}
+        .contacto{h3{font-size: 1.3rem; margin: 0;} h6{font-size: 1.2rem;}}
+        .footer-copyright p{font-size: 0.75rem;}
+    }
+}
+
+@media(max-width: 880px){
+    header nav{
+        .nav-gestion{
+            justify-content: space-between;
+        }
+    }
+
+    main{
+        .sec-mision-vision{
+            height: 290px;
+            .mision, .vision{h3{font-size: 2.4rem} p{font-size: 1rem};}
+        }
+
+        .sec-quienes-somos{
+            .quienes-parrafo{margin-right: 4%; h3,p{margin: 1rem 1.7rem 1rem 1.5rem;} h3{font-size: 1.4rem;} p{font-size: 1rem;}}
+            .quienes-somos-img{height: 235px; margin-right: 3%;}
+        }
+    }
+
+    footer{
+        .oficios{padding-inline: 3%; div{gap: 0px 20px;} a{font-size: 1rem;}}
+        .contacto{h3{font-size: 1.3rem;} h6{font-size: 0.9rem;}}
+    }
+}
+
+@media(max-width: 750px){
+    header nav{
+        .nav-gestion{
+            flex-wrap: wrap;
+            justify-content: center;
+            height: auto;
+
+            .flex-img{flex-grow: 1;}
+            .opciones ul{
+                flex-wrap: wrap;
+                a{font-size: 1.1rem;}
+            }
+        }
+    }
+
+    main{
+        text-align: center;
+        .sec-mision-vision{
+            flex-direction: column;
+            height: auto;
+            margin: 5% 15% 5% 15%;
+
+            .mision, .vision{h3{font-size:2.5rem} p{font-size: 1rem};}
+
+            .mis-vis-img{
+                height: auto;
+                width: 100%;
+
+                img{
+                    height: auto;
+                    width: 100%;
+                    border-right: 0;
+                    border-left: 0;
+                    border-top: groove 3.5px brown;
+                    border-bottom: groove 3.5px brown;
+                }
+            }
+        }
+            
+        .sec-quienes-somos{
+            flex-direction: column;
+            gap: 30px;
+            .quienes-parrafo{
+                border-radius: 180% 50% 180% 50% / 25% 20% 25% 20%;
+                border: 3px groove green;
+                margin: 0 5% 0 5%;
+                h3{font-size: 1.9rem;}
+                p{font-size: 1rem;}
+            }
+
+            .quienes-somos-img{
+                margin: 0;
+            }
+        }
+
+        .sec-historia{
+            .titulo-hist{height: 30px; h3{font-size: 1.7rem;}}
+            .parrafo-hist{div{height: 120px;}}
+        }
+    }
+
+    footer{
+        .footer-contactos{
+            flex-direction: column;
+            align-items: center;
+            gap: 30px 0px;
+
+            .redes-sociales, .oficios, sec-contactos{align-items: center; text-align: center; width: 100%;}
+            .oficios{background-color: black; padding: 25px; border-radius: 115% 115% 115% 115% / 15% 15% 15% 15%;}
+            .contacto{text-align: center; h6{font-size: 1.2rem; margin-top: 15px;}}
+            .whatsapp a{justify-content: center; h4{font-size: 1.4rem;}}
+            .oficios ul li a{font-size: 1rem;}
+        }
+    }
+}
+
+@media(max-width: 700px){
+    header nav .nav-gestion{
+
+        .opciones, ul{justify-content: center;}
+    }
+}
+
+@media(max-width: 585px){
+    header nav{
+        .nav-marquee marquee{font-size: 0.9rem;}
+
+        .nav-gestion{
+            .flex-img{flex-grow: 0; img{height: 35px;}}
+            .opciones ul{
+                text-align: center;
+                gap: 15px;
+                a{font-size: 0.8rem;}
+            }
+        }
+    }
+
+    main{
+        .sec-historia{
+            padding: 6% 4% 6% 4%;
+
+            .titulo-hist{height: 30px; h3{font-size: 1.7rem;}}
+            .parrafo-hist{margin-bottom: 2.5%; p{margin-bottom: 2.5%;} div{height: 80px; width: auto;}}
+        }
+        
+        .sec-servicios{
+            padding: 2% 4% 4% 4%;
+            gap: 10px;
+            .serv-parrafo{
+                h3{font-size: 1.4rem;}
+                p{font-size: 1rem; margin-bottom: 0;}
+            }
+
+            .serv-img{
+                height: 110px;
+            }
+        }
+    }
+}
+
+@media(max-width: 550px){
+    main{
+        .sec-mision-vision{
+            margin: 5% 7% 5% 7%;
+        }
+    }
+
+    footer{
+        .redes-h3{h3{font-size: 1.1rem; margin: 0;}}
+        .logo-kimsa{height: 138px;}
+        .contacto{h3{font-size: 1.1rem; margin: 0;} h6{font-size: 1rem;}}
+        .footer-copyright p{font-size: 0.65rem;}
+    }
+}
+
+@media(max-width: 450px){
+    header nav{
+        .nav-gestion{
+            .opciones ul{
+                flex-wrap: wrap;
+                text-align: center;
+                gap: 0px 10px;
+                a{font-size: 0.8rem;}
+            }
+        }
+    }
+
+    main{
+        .sec-quienes-somos{
+            .quienes-somos-img{width: auto;}
+        }
+    }
+}
+
+@media(max-width: 400px){
+    header nav{
+        .flex-img{flex-grow: 0;}
+    }
+
+    footer{
+        .footer-contactos{flex-direction: column; flex-wrap: wrap; padding: 2% 5% 2% 5%;}
+        .logo-kimsa{height: 120px;}
+    }
+}
+
+@media(max-width: 375px){
+    main{
+        .sec-historia{
+            .parrafo-hist{div{height: 65px;}}
+        }
+
+        .sec-quienes-somos{
+            .quienes-somos-img{height: 200px;}
+        }
+
+        .sec-servicios{
+            padding: 6% 4% 6% 4%;
+            flex-wrap: wrap;
+
+            .serv-img{
+                flex-direction: column;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+        }
+    }
+}

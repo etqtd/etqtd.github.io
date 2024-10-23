@@ -18,6 +18,27 @@ body{
     h1{
         font-family: 'MiFuente';
         color: fuchsia;
-        font-size: 5vw;
+        font-size: 80px;
+        transition: color 0.6s;
+    }
+    h1:hover{
+        color: hotpink;
+    }
+
+    header{
+        form{
+            .form-text{
+                font-size: 20px;
+            }
+            
+            label{
+                font-size: 30px;
+            }
+            
+                .btn btn-primary {
+                    padding: 50px;
+                }    
+
+        }   
     }
 }
