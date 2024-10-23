@@ -1,53 +1,184 @@
-<<<<<<< HEAD
-*,*::after,*::before{
-    box-sizing: border-box;
+*::after, 
+*::before {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-/*Inicio de Header*/
-
-header{
-    padding: 30px 0 30px 0;
+body {
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-nav ul{
+header {
+    padding: 30px 0;
+}
+
+nav ul {
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
-nav a{
+nav a {
     text-decoration: none;
     font-size: 1vw;
     color: black;
-    font-family: Arial, Helvetica, sans-serif;
     transition: color 0.3s;
 }
 
-nav a:hover{
+nav a:hover {
     color: #0170B9;
-    line-height: normal ;
+    line-height: normal;
 }
 
-nav li{
-
+nav li {
     list-style-type: none;
-    width: 10%;
+    width: auto;
     text-align: center;
     transition: all 0.5;
     border-bottom: 3px solid transparent;
     transition: all 0.9s ease-out;
+    padding: 0 15px 0 15px;
+}
 
+nav li:hover {
+    border-bottom: 3px solid #0170B9;
 }
-nav li:hover{
-  
-   border-bottom: 3px solid #0170B9;
+
+.flexcontenido {
+    margin-top: 30px;
+    padding-left: 30px;
 }
-body{
+
+.flexItem {
     display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-
+    align-items: center;
+    .flexIteminfo {
+        display: flex;
+        flex-direction: column;
+        padding: 50px;
+        text-align: center;
+    }
+    .flexItemImg{
+        border-radius: 10px;
+    }
 }
-=======
->>>>>>> carpineria
+
+.flexItem2 {
+    display: flex;
+    align-items: center;
+    margin-right: 33px;
+    .flexItem2Info {
+        display: flex;
+        flex-direction: column;
+        padding: 50px;
+        text-align: center;
+    }
+    .flexItem2Img{
+       border-radius: 10px;
+    }
+}
+
+footer {
+    margin-top: 60px;
+    border-top: 2px solid black; 
+    margin: 20px 0;
+    border-radius: 30px;
+    .redes {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        h3{
+            padding: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 20px;
+            align-items: center;
+
+            a {
+                text-decoration: none;
+                font-size: 50px;
+                color: rgb(0, 17, 255);
+                transition: color 0.9s;
+            }
+            .insta{
+            color: blueviolet;}
+            a:hover{
+            
+               color: rgb(0, 0, 0);
+            }
+        }
+    }
+}
+
+.Carrusel {
+    margin-left: 50px;
+    margin-right: 50px;
+    width: 80;
+}
+
+.Carrusel img {
+    width: 200%;          
+    height: auto;        
+    max-height: 1000px;   
+    object-fit: cover;   
+    border-radius: 20px; 
+}
+
+@media (max-width: 1200px) {
+    nav a {
+        font-size: 2.5vw;
+    }
+
+    .flexcontenido {
+        padding-left: 15px;
+    }
+
+    .flexItem, .flexItem2 {
+        flex-direction: column;
+    }
+
+    .flexIteminfo, .flexItem2Info {
+        padding: 30px;
+    }
+
+    .Carrusel {
+        margin-left: 20px;
+        margin-right: 20px;
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        padding: 0;
+        
+    }
+
+    nav li {
+        width: 100%;
+        
+    }
+
+    nav a {
+        font-size: 4vw;
+    }
+
+    .flexcontenido {
+        padding-left: 10px;
+    }
+
+    footer .redes ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .redes a {
+        font-size: 40px;
+    }
+}
