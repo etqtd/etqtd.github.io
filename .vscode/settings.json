@@ -1,6 +1,7 @@
 {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     "liveServer.settings.port": 5502,
     "git.ignoreLimitWarning": true
 =======
@@ -9,4 +10,7 @@
 =======
     "liveServer.settings.port": 5502
 >>>>>>> Pedagogia
+=======
+    "liveServer.settings.port": 5503
+>>>>>>> tecnologia
 }
